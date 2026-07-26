@@ -1673,7 +1673,7 @@ function BoldHome() {
       objectPosition: "center"
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/hero.mp4?v=1785026787867",
+    src: "/assets/hero.mp4?v=1785035670141",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -1749,7 +1749,7 @@ function BoldHome() {
       opacity: 0.55
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/bento.mp4?v=1785026787867",
+    src: "/assets/bento.mp4?v=1785035670141",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -4525,7 +4525,7 @@ function StoryVideoSection() {
       opacity: 0.5
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/bento.mp4?v=1785026787867",
+    src: "/assets/bento.mp4?v=1785035670141",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -5880,7 +5880,7 @@ function FeaturesContactSection() {
     style: {
       marginBottom: 10
     }
-  }, "Got it \u2014 we'll reach out."), /*#__PURE__*/React.createElement("p", {
+  }, "Got it. We'll reach out to you as soon as possible."), /*#__PURE__*/React.createElement("p", {
     className: "b-body"
   }, "Expect a response within 4 business hours."))))));
 }
@@ -7517,7 +7517,7 @@ function BoldContact() {
     style: {
       marginBottom: 10
     }
-  }, "Got it. Megan or Sonny will reach out."), /*#__PURE__*/React.createElement("p", {
+  }, "Got it. We'll reach out to you as soon as possible."), /*#__PURE__*/React.createElement("p", {
     className: "b-body"
   }, "Expect a response within 4 business hours.")))))), /*#__PURE__*/React.createElement(BoldFooter, null));
 }
@@ -10436,7 +10436,7 @@ function BoldContactMobile() {
       fontSize: 22,
       marginBottom: 10
     }
-  }, "Got it. Megan or Sonny will reach out."), /*#__PURE__*/React.createElement("p", {
+  }, "Got it. We'll reach out to you as soon as possible."), /*#__PURE__*/React.createElement("p", {
     className: "b-body"
   }, "Expect a response within 4 business hours.")))), /*#__PURE__*/React.createElement(MobFooter, null));
 }

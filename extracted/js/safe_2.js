@@ -513,7 +513,7 @@ function SafeContact() {
                 </> : <>
                   <div style={{ textAlign: "center", padding: "40px 0" }}>
                     <div style={{ width: 64, height: 64, borderRadius: 32, background: "var(--good)", color: "white", display: "grid", placeItems: "center", margin: "0 auto 20px", fontSize: 30 }}>✓</div>
-                    <h3 className="s-h3" style={{ marginBottom: 10 }}>Got it. Megan or Sonny will reach out.</h3>
+                    <h3 className="s-h3" style={{ marginBottom: 10 }}>Got it. We'll reach out to you as soon as possible.</h3>
                     <p className="s-body">Expect a response within 4 business hours. In the meantime, here's what to read next:</p>
                     <a href="#" className="s-btn s-btn-secondary" style={{ marginTop: 20 }}>Reading list for first-time buyers →</a>
                   </div>

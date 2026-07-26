@@ -496,7 +496,7 @@ function FeaturesContactSection() {
                 <div style={{ width: 56, height: 56, borderRadius: 28, background: "var(--accent-tint)",
                   display: "grid", placeItems: "center", margin: "0 auto 20px",
                   color: "var(--gold-deep)", fontSize: 26 }}>✓</div>
-                <h3 className="b-h3" style={{ marginBottom: 10 }}>Got it — we'll reach out.</h3>
+                <h3 className="b-h3" style={{ marginBottom: 10 }}>Got it. We'll reach out to you as soon as possible.</h3>
                 <p className="b-body">Expect a response within 4 business hours.</p>
               </div>
             )}
@@ -1089,7 +1089,7 @@ function BoldContact() {
                 </div>
               </> : <div style={{ padding: "60px 0", textAlign: "center" }}>
                 <div style={{ width: 56, height: 56, borderRadius: 28, background: "var(--accent-tint)", display: "grid", placeItems: "center", margin: "0 auto 20px", color: "var(--gold-deep)", fontSize: 26 }}>✓</div>
-                <h3 className="b-h3" style={{ marginBottom: 10 }}>Got it. Megan or Sonny will reach out.</h3>
+                <h3 className="b-h3" style={{ marginBottom: 10 }}>Got it. We'll reach out to you as soon as possible.</h3>
                 <p className="b-body">Expect a response within 4 business hours.</p>
               </div>}
             </div>
