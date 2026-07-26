@@ -275,13 +275,17 @@ body { font-family: var(--font-sans); }
   padding: 28px;
 }
 
-.b-input {
-  display: block; width: 100%; padding: 12px 14px;
-  border: 1px solid var(--line-2); background: var(--bg);
+/* Scoped over the .b-page input reset (which zeroes border/background) —
+   without the extra ancestor class these boxes render invisible. */
+.b-input, .b-page .b-input, .s-page .b-input {
+  display: block; width: 100%; padding: 13px 14px;
+  border: 1.5px solid #8FC3D9; background: #F5FAFD;
   border-radius: 8px; font-size: 15px; color: var(--ink);
-  transition: border-color .15s, box-shadow .15s;
+  transition: border-color .15s, box-shadow .15s, background .15s;
 }
-.b-input:focus { border-color: var(--gold); box-shadow: 0 0 0 3px var(--accent-tint); }
+.b-input::placeholder { color: #93A9B5; opacity: 1; }
+.b-input:hover { border-color: #6FB3D0; }
+.b-input:focus { border-color: var(--gold); background: #FFFFFF; box-shadow: 0 0 0 3px var(--accent-tint); outline: none; }
 .b-label { display:block; font-size: 12px; color: var(--ink-soft); margin-bottom: 6px; letter-spacing: 0.005em; font-weight: 500; }
 
 .b-section-warm { background: var(--bg-2); color: var(--ink); }

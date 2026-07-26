@@ -1637,7 +1637,7 @@ function BoldHome() {
       objectPosition: "center"
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/hero.mp4?v=1784094633626",
+    src: "/assets/hero.mp4?v=1785025859104",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -1713,7 +1713,7 @@ function BoldHome() {
       opacity: 0.55
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/bento.mp4?v=1784094633626",
+    src: "/assets/bento.mp4?v=1785025859104",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -4489,7 +4489,7 @@ function StoryVideoSection() {
       opacity: 0.5
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/bento.mp4?v=1784094633626",
+    src: "/assets/bento.mp4?v=1785025859104",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
