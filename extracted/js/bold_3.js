@@ -396,6 +396,15 @@ function BoldFeatures() {
 function FeaturesContactSection() {
   const [submitted, setSubmitted] = React.useState(false);
   const [interest, setInterest] = React.useState("Mortgage Under Management");
+  const [sending, setSending] = React.useState(false);
+  const [sendErr, setSendErr] = React.useState(false);
+  const submit = async () => {
+    if (sending) return;
+    setSending(true); setSendErr(false);
+    try { await sendInquiry("contact-form-f", interest, ""); setSubmitted(true); }
+    catch (e) { setSendErr(true); }
+    finally { setSending(false); }
+  };
 
   return (
     <section style={{ padding: "120px 0", background: "var(--bg)" }}>
@@ -423,7 +432,7 @@ function FeaturesContactSection() {
             </div>
           </div>
 
-          <div style={{ background: "#fff", border: "1px solid var(--line)", borderRadius: 16, padding: 40,
+          <div id="contact-form-f" style={{ background: "#fff", border: "1px solid var(--line)", borderRadius: 16, padding: 40,
             boxShadow: "0 24px 64px -32px rgba(46,182,222,.2)" }}>
             {!submitted ? (
               <>
@@ -432,16 +441,16 @@ function FeaturesContactSection() {
                 <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
                   <div>
                     <label className="b-label">Full name</label>
-                    <input className="b-input" placeholder="Alex Rivera" />
+                    <input className="b-input" name="name" placeholder="Alex Rivera" />
                   </div>
                   <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
                     <div>
                       <label className="b-label">Email</label>
-                      <input className="b-input" placeholder="alex@example.com" />
+                      <input className="b-input" name="email" type="email" placeholder="alex@example.com" />
                     </div>
                     <div>
                       <label className="b-label">Phone</label>
-                      <input className="b-input" placeholder="(555) 555-5555" />
+                      <input className="b-input" name="phone" type="tel" placeholder="(555) 555-5555" />
                     </div>
                   </div>
                   <div>
@@ -466,15 +475,17 @@ function FeaturesContactSection() {
                   </div>
                   <div>
                     <label className="b-label">Anything we should know?</label>
-                    <textarea className="b-input" rows="3" placeholder="Where you are in the process, timeline, questions…" />
+                    <textarea className="b-input" name="message" rows="3" placeholder="Where you are in the process, timeline, questions…" />
                   </div>
-                  <button onClick={() => setSubmitted(true)}
+                  <button onClick={submit} disabled={sending}
                     style={{ marginTop: 8, padding: "14px 22px", fontSize: 14, fontWeight: 600,
                       background: "var(--gold)", color: "var(--ink-on-cyan)",
                       borderRadius: 10, justifyContent: "center", display: "flex",
+                      opacity: sending ? 0.6 : 1,
                       boxShadow: "0 6px 20px -6px rgba(46,182,222,.4)" }}>
-                    Send message →
+                    {sending ? "Sending…" : "Send message →"}
                   </button>
+                  {sendErr && <p style={{ fontSize: 13, color: "#B4232A", textAlign: "center", marginTop: 4 }}>Couldn't send just now — please email <a href="mailto:team@gemhometeam.com" style={{ fontWeight: 600, color: "#B4232A", textDecoration: "underline" }}>team@gemhometeam.com</a> directly.</p>}
                   <p style={{ fontSize: 11, color: "var(--ink-mute)", textAlign: "center", marginTop: 4 }}>
                     By submitting you agree to our privacy policy.
                   </p>
@@ -986,6 +997,15 @@ function BoldContact() {
   const [submitted, setSubmitted] = useStateB2(false);
   const [selected, setSelected] = useStateB2("Buying my first home");
   const [timeline, setTimeline] = useStateB2("3–6 mo");
+  const [sending, setSending] = useStateB2(false);
+  const [sendErr, setSendErr] = useStateB2(false);
+  const submit = async () => {
+    if (sending) return;
+    setSending(true); setSendErr(false);
+    try { await sendInquiry("contact-form-d", selected, timeline); setSubmitted(true); }
+    catch (e) { setSendErr(true); }
+    finally { setSending(false); }
+  };
   return (
     <div className="b-page" data-screen-label="Bold · Contact">
       <BoldNav active="Contact" />
@@ -1017,23 +1037,23 @@ function BoldContact() {
               </div>
             </div>
 
-            <div className="b-card" style={{ padding: 40 }}>
+            <div className="b-card" style={{ padding: 40 }} id="contact-form-d">
               {!submitted ? <>
                 <h3 className="b-h3" style={{ marginBottom: 6 }}>Tell us where you're at.</h3>
                 <p className="b-body" style={{ marginBottom: 32, fontSize: 14 }}>We'll respond within 4 business hours.</p>
                 <div className="col gap-4">
                   <div>
                     <label className="b-label">Full name</label>
-                    <input className="b-input" placeholder="Alex Rivera" />
+                    <input className="b-input" name="name" placeholder="Alex Rivera" />
                   </div>
                   <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
                     <div>
                       <label className="b-label">Email</label>
-                      <input className="b-input" placeholder="alex@example.com" />
+                      <input className="b-input" name="email" type="email" placeholder="alex@example.com" />
                     </div>
                     <div>
                       <label className="b-label">Phone</label>
-                      <input className="b-input" placeholder="(555) 555-5555" />
+                      <input className="b-input" name="phone" type="tel" placeholder="(555) 555-5555" />
                     </div>
                   </div>
                   <div>
@@ -1062,9 +1082,10 @@ function BoldContact() {
                   </div>
                   <div>
                     <label className="b-label">Anything we should know?</label>
-                    <textarea className="b-input" rows="3" placeholder="Tell us a bit about your situation…" />
+                    <textarea className="b-input" name="message" rows="3" placeholder="Tell us a bit about your situation…" />
                   </div>
-                  <button onClick={() => setSubmitted(true)} className="b-btn b-btn-primary" style={{ justifyContent: "center", padding: "14px", marginTop: 8 }}>Send message →</button>
+                  <button onClick={submit} disabled={sending} className="b-btn b-btn-primary" style={{ justifyContent: "center", padding: "14px", marginTop: 8, opacity: sending ? 0.6 : 1 }}>{sending ? "Sending…" : "Send message →"}</button>
+                  {sendErr && <p style={{ fontSize: 13, color: "#B4232A", textAlign: "center", marginTop: 4 }}>Couldn't send just now — please email <a href="mailto:team@gemhometeam.com" style={{ fontWeight: 600, color: "#B4232A", textDecoration: "underline" }}>team@gemhometeam.com</a> directly.</p>}
                 </div>
               </> : <div style={{ padding: "60px 0", textAlign: "center" }}>
                 <div style={{ width: 56, height: 56, borderRadius: 28, background: "var(--accent-tint)", display: "grid", placeItems: "center", margin: "0 auto 20px", color: "var(--gold-deep)", fontSize: 26 }}>✓</div>

@@ -63,9 +63,7 @@ function wireCtas(src) {
   wire(APPLY_LABELS, APPLY);
   wire(VIDEO_LABELS, YT);
   for (const [label, href] of Object.entries(INTERNAL)) wire([label], href, false);
-  // Contact form: no backend — funnel the submit to the secure application.
-  src = src.split('onClick={() => setSubmitted(true)}').join('onClick={() => window.open("' + APPLY + '","_blank","noopener")}');
-  src = src.split('Send message →').join('Start my application →');
+  // Contact forms now submit for real via sendInquiry (shared_data.js) — no relabel/funnel.
   return src;
 }
 

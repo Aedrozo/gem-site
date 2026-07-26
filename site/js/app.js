@@ -611,6 +611,42 @@ Object.assign(window, {
   NEOMark
 });
 
+/* ---------- Contact form → email relay ----------
+   FormSubmit.co AJAX endpoint: no account needed; submissions email to the
+   team inbox. First-ever submission triggers a one-time activation email to
+   that inbox — until it's confirmed, messages don't deliver. */
+async function sendInquiry(rootId, interest, timeline) {
+  const root = document.getElementById(rootId);
+  const val = n => {
+    const el = root && root.querySelector('[name="' + n + '"]');
+    return el ? el.value.trim() : "";
+  };
+  const payload = {
+    _subject: "Website inquiry — " + (val("name") || "new lead"),
+    _template: "table",
+    _captcha: "false",
+    _replyto: val("email"),
+    name: val("name"),
+    email: val("email"),
+    phone: val("phone"),
+    interest: interest || "",
+    timeline: timeline || "",
+    message: val("message"),
+    page: typeof window !== "undefined" ? window.location.href : ""
+  };
+  const res = await fetch("https://formsubmit.co/ajax/team@gemhometeam.com", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify(payload)
+  });
+  if (!res.ok) throw new Error("HTTP " + res.status);
+  return res.json();
+}
+if (typeof window !== "undefined") window.sendInquiry = sendInquiry;
+
 /* ===== shared_illustrations ===== */
 /* ============================================================
    Shared content data — drawn from gemhometeam.com facts,
@@ -1637,7 +1673,7 @@ function BoldHome() {
       objectPosition: "center"
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/hero.mp4?v=1785025859104",
+    src: "/assets/hero.mp4?v=1785026787867",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -1713,7 +1749,7 @@ function BoldHome() {
       opacity: 0.55
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/bento.mp4?v=1785025859104",
+    src: "/assets/bento.mp4?v=1785026787867",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -4489,7 +4525,7 @@ function StoryVideoSection() {
       opacity: 0.5
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/bento.mp4?v=1785025859104",
+    src: "/assets/bento.mp4?v=1785026787867",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -5614,6 +5650,21 @@ function BoldFeatures() {
 function FeaturesContactSection() {
   const [submitted, setSubmitted] = React.useState(false);
   const [interest, setInterest] = React.useState("Mortgage Under Management");
+  const [sending, setSending] = React.useState(false);
+  const [sendErr, setSendErr] = React.useState(false);
+  const submit = async () => {
+    if (sending) return;
+    setSending(true);
+    setSendErr(false);
+    try {
+      await sendInquiry("contact-form-f", interest, "");
+      setSubmitted(true);
+    } catch (e) {
+      setSendErr(true);
+    } finally {
+      setSending(false);
+    }
+  };
   return /*#__PURE__*/React.createElement("section", {
     style: {
       padding: "120px 0",
@@ -5690,6 +5741,7 @@ function FeaturesContactSection() {
       lineHeight: 1.55
     }
   }, "10089 Willow Creek Rd, Suite 200", /*#__PURE__*/React.createElement("br", null), "San Diego, CA 92131")))), /*#__PURE__*/React.createElement("div", {
+    id: "contact-form-f",
     style: {
       background: "#fff",
       border: "1px solid var(--line)",
@@ -5718,6 +5770,7 @@ function FeaturesContactSection() {
     className: "b-label"
   }, "Full name"), /*#__PURE__*/React.createElement("input", {
     className: "b-input",
+    name: "name",
     placeholder: "Alex Rivera"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -5729,11 +5782,15 @@ function FeaturesContactSection() {
     className: "b-label"
   }, "Email"), /*#__PURE__*/React.createElement("input", {
     className: "b-input",
+    name: "email",
+    type: "email",
     placeholder: "alex@example.com"
   })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
     className: "b-label"
   }, "Phone"), /*#__PURE__*/React.createElement("input", {
     className: "b-input",
+    name: "phone",
+    type: "tel",
     placeholder: "(555) 555-5555"
   }))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
     className: "b-label"
@@ -5761,10 +5818,12 @@ function FeaturesContactSection() {
     className: "b-label"
   }, "Anything we should know?"), /*#__PURE__*/React.createElement("textarea", {
     className: "b-input",
+    name: "message",
     rows: "3",
     placeholder: "Where you are in the process, timeline, questions\u2026"
   })), /*#__PURE__*/React.createElement("button", {
-    onClick: () => window.open("https://neohomeloans.com/start/r/130389", "_blank", "noopener"),
+    onClick: submit,
+    disabled: sending,
     style: {
       marginTop: 8,
       padding: "14px 22px",
@@ -5775,9 +5834,24 @@ function FeaturesContactSection() {
       borderRadius: 10,
       justifyContent: "center",
       display: "flex",
+      opacity: sending ? 0.6 : 1,
       boxShadow: "0 6px 20px -6px rgba(46,182,222,.4)"
     }
-  }, "Start my application \u2192"), /*#__PURE__*/React.createElement("p", {
+  }, sending ? "Sending…" : "Send message →"), sendErr && /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: 13,
+      color: "#B4232A",
+      textAlign: "center",
+      marginTop: 4
+    }
+  }, "Couldn't send just now \u2014 please email ", /*#__PURE__*/React.createElement("a", {
+    href: "mailto:team@gemhometeam.com",
+    style: {
+      fontWeight: 600,
+      color: "#B4232A",
+      textDecoration: "underline"
+    }
+  }, "team@gemhometeam.com"), " directly."), /*#__PURE__*/React.createElement("p", {
     style: {
       fontSize: 11,
       color: "var(--ink-mute)",
@@ -7215,6 +7289,21 @@ function BoldContact() {
   const [submitted, setSubmitted] = useStateB2(false);
   const [selected, setSelected] = useStateB2("Buying my first home");
   const [timeline, setTimeline] = useStateB2("3–6 mo");
+  const [sending, setSending] = useStateB2(false);
+  const [sendErr, setSendErr] = useStateB2(false);
+  const submit = async () => {
+    if (sending) return;
+    setSending(true);
+    setSendErr(false);
+    try {
+      await sendInquiry("contact-form-d", selected, timeline);
+      setSubmitted(true);
+    } catch (e) {
+      setSendErr(true);
+    } finally {
+      setSending(false);
+    }
+  };
   return /*#__PURE__*/React.createElement("div", {
     className: "b-page",
     "data-screen-label": "Bold \xB7 Contact"
@@ -7291,7 +7380,8 @@ function BoldContact() {
     className: "b-card",
     style: {
       padding: 40
-    }
+    },
+    id: "contact-form-d"
   }, !submitted ? /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("h3", {
     className: "b-h3",
     style: {
@@ -7309,6 +7399,7 @@ function BoldContact() {
     className: "b-label"
   }, "Full name"), /*#__PURE__*/React.createElement("input", {
     className: "b-input",
+    name: "name",
     placeholder: "Alex Rivera"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -7320,11 +7411,15 @@ function BoldContact() {
     className: "b-label"
   }, "Email"), /*#__PURE__*/React.createElement("input", {
     className: "b-input",
+    name: "email",
+    type: "email",
     placeholder: "alex@example.com"
   })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
     className: "b-label"
   }, "Phone"), /*#__PURE__*/React.createElement("input", {
     className: "b-input",
+    name: "phone",
+    type: "tel",
     placeholder: "(555) 555-5555"
   }))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
     className: "b-label"
@@ -7373,17 +7468,34 @@ function BoldContact() {
     className: "b-label"
   }, "Anything we should know?"), /*#__PURE__*/React.createElement("textarea", {
     className: "b-input",
+    name: "message",
     rows: "3",
     placeholder: "Tell us a bit about your situation\u2026"
   })), /*#__PURE__*/React.createElement("button", {
-    onClick: () => window.open("https://neohomeloans.com/start/r/130389", "_blank", "noopener"),
+    onClick: submit,
+    disabled: sending,
     className: "b-btn b-btn-primary",
     style: {
       justifyContent: "center",
       padding: "14px",
-      marginTop: 8
+      marginTop: 8,
+      opacity: sending ? 0.6 : 1
     }
-  }, "Start my application \u2192"))) : /*#__PURE__*/React.createElement("div", {
+  }, sending ? "Sending…" : "Send message →"), sendErr && /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: 13,
+      color: "#B4232A",
+      textAlign: "center",
+      marginTop: 4
+    }
+  }, "Couldn't send just now \u2014 please email ", /*#__PURE__*/React.createElement("a", {
+    href: "mailto:team@gemhometeam.com",
+    style: {
+      fontWeight: 600,
+      color: "#B4232A",
+      textDecoration: "underline"
+    }
+  }, "team@gemhometeam.com"), " directly."))) : /*#__PURE__*/React.createElement("div", {
     style: {
       padding: "60px 0",
       textAlign: "center"
@@ -10101,6 +10213,21 @@ function BoldContactMobile() {
   const [submitted, setSubmitted] = useStateM(false);
   const [selected, setSelected] = useStateM("Buying my first home");
   const [timeline, setTimeline] = useStateM("3–6 mo");
+  const [sending, setSending] = useStateM(false);
+  const [sendErr, setSendErr] = useStateM(false);
+  const submit = async () => {
+    if (sending) return;
+    setSending(true);
+    setSendErr(false);
+    try {
+      await sendInquiry("contact-form-m", selected, timeline);
+      setSubmitted(true);
+    } catch (e) {
+      setSendErr(true);
+    } finally {
+      setSending(false);
+    }
+  };
   return /*#__PURE__*/React.createElement("div", {
     className: "b-page",
     "data-screen-label": "Bold \xB7 Contact (Mobile)"
@@ -10190,21 +10317,27 @@ function BoldContactMobile() {
       fontSize: 14
     }
   }, "We'll respond within 4 business hours."), /*#__PURE__*/React.createElement("div", {
-    className: "col gap-4"
+    className: "col gap-4",
+    id: "contact-form-m"
   }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
     className: "b-label"
   }, "Full name"), /*#__PURE__*/React.createElement("input", {
     className: "b-input",
+    name: "name",
     placeholder: "Alex Rivera"
   })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
     className: "b-label"
   }, "Email"), /*#__PURE__*/React.createElement("input", {
     className: "b-input",
+    name: "email",
+    type: "email",
     placeholder: "alex@example.com"
   })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
     className: "b-label"
   }, "Phone"), /*#__PURE__*/React.createElement("input", {
     className: "b-input",
+    name: "phone",
+    type: "tel",
     placeholder: "(555) 555-5555"
   })), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("label", {
     className: "b-label"
@@ -10253,17 +10386,34 @@ function BoldContactMobile() {
     className: "b-label"
   }, "Anything we should know?"), /*#__PURE__*/React.createElement("textarea", {
     className: "b-input",
+    name: "message",
     rows: "3",
     placeholder: "Tell us a bit about your situation\u2026"
   })), /*#__PURE__*/React.createElement("button", {
-    onClick: () => window.open("https://neohomeloans.com/start/r/130389", "_blank", "noopener"),
+    onClick: submit,
+    disabled: sending,
     className: "b-btn b-btn-primary",
     style: {
       justifyContent: "center",
       padding: "14px",
-      marginTop: 4
+      marginTop: 4,
+      opacity: sending ? 0.6 : 1
     }
-  }, "Start my application \u2192"))) : /*#__PURE__*/React.createElement("div", {
+  }, sending ? "Sending…" : "Send message →"), sendErr && /*#__PURE__*/React.createElement("p", {
+    style: {
+      fontSize: 13,
+      color: "#B4232A",
+      textAlign: "center",
+      marginTop: 2
+    }
+  }, "Couldn't send just now \u2014 please email ", /*#__PURE__*/React.createElement("a", {
+    href: "mailto:team@gemhometeam.com",
+    style: {
+      fontWeight: 600,
+      color: "#B4232A",
+      textDecoration: "underline"
+    }
+  }, "team@gemhometeam.com"), " directly."))) : /*#__PURE__*/React.createElement("div", {
     style: {
       padding: "48px 0",
       textAlign: "center"

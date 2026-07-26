@@ -183,3 +183,33 @@ const PhotoSlot = ({ width, height, label = "PHOTO", radius = 0, fill = false })
 );
 
 Object.assign(window, { HouseIllo, GemIllo, KeyIllo, ChartIllo, CoinsIllo, SunIllo, WaveIllo, DocIllo, MapIllo, PhotoSlot, NEOMark });
+
+/* ---------- Contact form → email relay ----------
+   FormSubmit.co AJAX endpoint: no account needed; submissions email to the
+   team inbox. First-ever submission triggers a one-time activation email to
+   that inbox — until it's confirmed, messages don't deliver. */
+async function sendInquiry(rootId, interest, timeline) {
+  const root = document.getElementById(rootId);
+  const val = (n) => { const el = root && root.querySelector('[name="' + n + '"]'); return el ? el.value.trim() : ""; };
+  const payload = {
+    _subject: "Website inquiry — " + (val("name") || "new lead"),
+    _template: "table",
+    _captcha: "false",
+    _replyto: val("email"),
+    name: val("name"),
+    email: val("email"),
+    phone: val("phone"),
+    interest: interest || "",
+    timeline: timeline || "",
+    message: val("message"),
+    page: (typeof window !== "undefined" ? window.location.href : ""),
+  };
+  const res = await fetch("https://formsubmit.co/ajax/team@gemhometeam.com", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "Accept": "application/json" },
+    body: JSON.stringify(payload),
+  });
+  if (!res.ok) throw new Error("HTTP " + res.status);
+  return res.json();
+}
+if (typeof window !== "undefined") window.sendInquiry = sendInquiry;

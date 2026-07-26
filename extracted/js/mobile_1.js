@@ -400,6 +400,15 @@ function BoldContactMobile() {
   const [submitted, setSubmitted] = useStateM(false);
   const [selected, setSelected] = useStateM("Buying my first home");
   const [timeline, setTimeline] = useStateM("3–6 mo");
+  const [sending, setSending] = useStateM(false);
+  const [sendErr, setSendErr] = useStateM(false);
+  const submit = async () => {
+    if (sending) return;
+    setSending(true); setSendErr(false);
+    try { await sendInquiry("contact-form-m", selected, timeline); setSubmitted(true); }
+    catch (e) { setSendErr(true); }
+    finally { setSending(false); }
+  };
   return (
     <div className="b-page" data-screen-label="Bold · Contact (Mobile)">
       <MobHeader />
@@ -439,18 +448,18 @@ function BoldContactMobile() {
             <>
               <h3 className="b-h3" style={{ fontSize: 22, marginBottom: 6 }}>Tell us where you're at.</h3>
               <p className="b-body" style={{ marginBottom: 24, fontSize: 14 }}>We'll respond within 4 business hours.</p>
-              <div className="col gap-4">
+              <div className="col gap-4" id="contact-form-m">
                 <div>
                   <label className="b-label">Full name</label>
-                  <input className="b-input" placeholder="Alex Rivera" />
+                  <input className="b-input" name="name" placeholder="Alex Rivera" />
                 </div>
                 <div>
                   <label className="b-label">Email</label>
-                  <input className="b-input" placeholder="alex@example.com" />
+                  <input className="b-input" name="email" type="email" placeholder="alex@example.com" />
                 </div>
                 <div>
                   <label className="b-label">Phone</label>
-                  <input className="b-input" placeholder="(555) 555-5555" />
+                  <input className="b-input" name="phone" type="tel" placeholder="(555) 555-5555" />
                 </div>
                 <div>
                   <label className="b-label">I'm thinking about…</label>
@@ -480,9 +489,10 @@ function BoldContactMobile() {
                 </div>
                 <div>
                   <label className="b-label">Anything we should know?</label>
-                  <textarea className="b-input" rows="3" placeholder="Tell us a bit about your situation…"></textarea>
+                  <textarea className="b-input" name="message" rows="3" placeholder="Tell us a bit about your situation…"></textarea>
                 </div>
-                <button onClick={() => setSubmitted(true)} className="b-btn b-btn-primary" style={{ justifyContent: "center", padding: "14px", marginTop: 4 }}>Send message →</button>
+                <button onClick={submit} disabled={sending} className="b-btn b-btn-primary" style={{ justifyContent: "center", padding: "14px", marginTop: 4, opacity: sending ? 0.6 : 1 }}>{sending ? "Sending…" : "Send message →"}</button>
+                {sendErr && <p style={{ fontSize: 13, color: "#B4232A", textAlign: "center", marginTop: 2 }}>Couldn't send just now — please email <a href="mailto:team@gemhometeam.com" style={{ fontWeight: 600, color: "#B4232A", textDecoration: "underline" }}>team@gemhometeam.com</a> directly.</p>}
               </div>
             </>
           ) : (
