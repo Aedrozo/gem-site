@@ -1,0 +1,16 @@
+{
+  "name": "gem-site",
+  "version": "1.0.0",
+  "description": "A real, deployable static website built from the original design file (`GEM Team Website (offline).html`). The design exploration \"canvas\" was converted into a navigable multi-page site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "jsdom": "^24.1.3"
+  }
+}
