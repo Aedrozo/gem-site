@@ -1562,90 +1562,12 @@ function BoldHome() {
     }
   }, "\u25B6"), "Watch in 90 seconds")), /*#__PURE__*/React.createElement("div", {
     style: {
-      display: "flex",
-      alignItems: "center",
-      gap: 32,
-      padding: "20px 24px",
-      background: "var(--bg)",
-      border: "1px solid var(--line)",
-      borderRadius: 14,
-      boxShadow: "0 8px 24px -16px rgba(46,182,222,.25)"
-    }
-  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontSize: 10,
-      color: "var(--ink-mute)",
-      letterSpacing: ".08em",
-      fontWeight: 600
-    }
-  }, "SAMPLE \xB7 30Y FIXED"), /*#__PURE__*/React.createElement("div", {
-    className: "tabular",
-    style: {
-      fontSize: 28,
-      fontWeight: 600,
-      letterSpacing: "-0.02em",
-      color: "var(--gold-deep)",
-      marginTop: 2
-    }
-  }, "6.375%")), /*#__PURE__*/React.createElement("div", {
-    style: {
-      width: 1,
-      height: 32,
-      background: "var(--line)"
-    }
-  }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontSize: 10,
-      color: "var(--ink-mute)",
-      letterSpacing: ".08em",
-      fontWeight: 600
-    }
-  }, "15Y FIXED"), /*#__PURE__*/React.createElement("div", {
-    className: "tabular",
-    style: {
-      fontSize: 22,
-      fontWeight: 500,
-      letterSpacing: "-0.018em",
-      marginTop: 2
-    }
-  }, "5.625%")), /*#__PURE__*/React.createElement("div", {
-    style: {
-      width: 1,
-      height: 32,
-      background: "var(--line)"
-    }
-  }), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontSize: 10,
-      color: "var(--ink-mute)",
-      letterSpacing: ".08em",
-      fontWeight: 600
-    }
-  }, "FHA \xB7 30Y"), /*#__PURE__*/React.createElement("div", {
-    className: "tabular",
-    style: {
-      fontSize: 22,
-      fontWeight: 500,
-      letterSpacing: "-0.018em",
-      marginTop: 2
-    }
-  }, "6.125%")), /*#__PURE__*/React.createElement("a", {
-    href: "#mortgage-calculator",
-    style: {
-      marginLeft: "auto",
-      fontSize: 12,
-      fontWeight: 600,
-      color: "var(--gold-deep)"
-    }
-  }, "Compare all \u2192")), /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontSize: 10.5,
-      color: "var(--ink-mute)",
-      marginTop: 8,
+      fontSize: 13,
+      color: "var(--ink-soft)",
       lineHeight: 1.5,
       maxWidth: 560
     }
-  }, "Sample rates shown for illustration only \u2014 not a rate quote, pre-qualification, or commitment to lend. Your rate depends on credit, loan amount, property, and market conditions, and is subject to change. ", /*#__PURE__*/React.createElement("a", {
+  }, "Rates change daily and depend on your credit, loan amount, and property. ", /*#__PURE__*/React.createElement("a", {
     href: "/contact",
     style: {
       color: "var(--gold-deep)",
@@ -1673,7 +1595,7 @@ function BoldHome() {
       objectPosition: "center"
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/hero.mp4?v=1785035670141",
+    src: "/assets/hero.mp4?v=1785264448517",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -1749,7 +1671,7 @@ function BoldHome() {
       opacity: 0.55
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/bento.mp4?v=1785035670141",
+    src: "/assets/bento.mp4?v=1785264448517",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -4525,7 +4447,7 @@ function StoryVideoSection() {
       opacity: 0.5
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/bento.mp4?v=1785035670141",
+    src: "/assets/bento.mp4?v=1785264448517",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -4664,55 +4586,19 @@ function BoldHomeMobile() {
     style: {
       padding: "0 20px 32px"
     }
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      border: "1px solid var(--line)",
-      borderRadius: 12,
-      overflow: "hidden"
-    }
-  }, [["30-year fixed", "6.375%", "20% down · conventional"], ["15-year fixed", "5.625%", "20% down · conventional"], ["FHA · 30y", "6.125%", "3.5% down"]].map(([k, v, s], i) => /*#__PURE__*/React.createElement("div", {
-    key: k,
-    style: {
-      padding: "18px 20px",
-      borderTop: i > 0 ? "1px solid var(--line)" : "none",
-      display: "flex",
-      justifyContent: "space-between",
-      alignItems: "center"
-    }
-  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("p", {
     style: {
       fontSize: 13,
-      fontWeight: 500
+      color: "var(--ink-soft)",
+      lineHeight: 1.55
     }
-  }, k), /*#__PURE__*/React.createElement("div", {
+  }, "Rates change daily and depend on your credit, loan amount, and property. ", /*#__PURE__*/React.createElement("a", {
+    href: "/contact",
     style: {
-      fontSize: 11,
-      color: "var(--ink-mute)",
-      marginTop: 2
+      color: "var(--gold-deep)",
+      fontWeight: 600
     }
-  }, s)), /*#__PURE__*/React.createElement("div", {
-    className: "tabular",
-    style: {
-      fontSize: 22,
-      fontWeight: 500,
-      letterSpacing: "-0.015em"
-    }
-  }, v)))), /*#__PURE__*/React.createElement("div", {
-    style: {
-      marginTop: 10,
-      fontSize: 10,
-      color: "var(--ink-mute)",
-      fontFamily: "var(--font-mono)",
-      letterSpacing: ".06em"
-    }
-  }, "\u25CF SAMPLE RATES \xB7 ILLUSTRATIVE ONLY"), /*#__PURE__*/React.createElement("div", {
-    style: {
-      marginTop: 6,
-      fontSize: 10,
-      color: "var(--ink-mute)",
-      lineHeight: 1.5
-    }
-  }, "Not a rate quote or commitment to lend; subject to change with credit, loan, and market conditions.")), /*#__PURE__*/React.createElement("section", {
+  }, "Contact us for a personalized quote."))), /*#__PURE__*/React.createElement("section", {
     className: "b-section-cyan",
     style: {
       padding: "32px 20px"

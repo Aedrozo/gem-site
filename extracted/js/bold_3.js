@@ -28,29 +28,11 @@ function BoldHomeMobile() {
         </div>
       </section>
 
-      {/* Live rates strip */}
+      {/* Rates note */}
       <section style={{ padding: "0 20px 32px" }}>
-        <div style={{ border: "1px solid var(--line)", borderRadius: 12, overflow: "hidden" }}>
-          {[
-            ["30-year fixed", "6.375%", "20% down · conventional"],
-            ["15-year fixed", "5.625%", "20% down · conventional"],
-            ["FHA · 30y", "6.125%", "3.5% down"],
-          ].map(([k, v, s], i) => (
-            <div key={k} style={{ padding: "18px 20px", borderTop: i > 0 ? "1px solid var(--line)" : "none", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-              <div>
-                <div style={{ fontSize: 13, fontWeight: 500 }}>{k}</div>
-                <div style={{ fontSize: 11, color: "var(--ink-mute)", marginTop: 2 }}>{s}</div>
-              </div>
-              <div className="tabular" style={{ fontSize: 22, fontWeight: 500, letterSpacing: "-0.015em" }}>{v}</div>
-            </div>
-          ))}
-        </div>
-        <div style={{ marginTop: 10, fontSize: 10, color: "var(--ink-mute)", fontFamily: "var(--font-mono)", letterSpacing: ".06em" }}>
-          ● SAMPLE RATES · ILLUSTRATIVE ONLY
-        </div>
-        <div style={{ marginTop: 6, fontSize: 10, color: "var(--ink-mute)", lineHeight: 1.5 }}>
-          Not a rate quote or commitment to lend; subject to change with credit, loan, and market conditions.
-        </div>
+        <p style={{ fontSize: 13, color: "var(--ink-soft)", lineHeight: 1.55 }}>
+          Rates change daily and depend on your credit, loan amount, and property. <a href="/contact" style={{ color: "var(--gold-deep)", fontWeight: 600 }}>Contact us for a personalized quote.</a>
+        </p>
       </section>
 
       {/* Stats — full cyan */}

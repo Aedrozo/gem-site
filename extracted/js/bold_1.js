@@ -300,29 +300,8 @@ function BoldHome() {
                   Watch in 90 seconds
                 </a>
               </div>
-              {/* live rate inline ticker */}
-              <div style={{ display: "flex", alignItems: "center", gap: 32, padding: "20px 24px",
-                background: "var(--bg)", border: "1px solid var(--line)", borderRadius: 14,
-                boxShadow: "0 8px 24px -16px rgba(46,182,222,.25)" }}>
-                <div>
-                  <div style={{ fontSize: 10, color: "var(--ink-mute)", letterSpacing: ".08em", fontWeight: 600 }}>SAMPLE · 30Y FIXED</div>
-                  <div className="tabular" style={{ fontSize: 28, fontWeight: 600, letterSpacing: "-0.02em", color: "var(--gold-deep)", marginTop: 2 }}>6.375%</div>
-                </div>
-                <div style={{ width: 1, height: 32, background: "var(--line)" }}></div>
-                <div>
-                  <div style={{ fontSize: 10, color: "var(--ink-mute)", letterSpacing: ".08em", fontWeight: 600 }}>15Y FIXED</div>
-                  <div className="tabular" style={{ fontSize: 22, fontWeight: 500, letterSpacing: "-0.018em", marginTop: 2 }}>5.625%</div>
-                </div>
-                <div style={{ width: 1, height: 32, background: "var(--line)" }}></div>
-                <div>
-                  <div style={{ fontSize: 10, color: "var(--ink-mute)", letterSpacing: ".08em", fontWeight: 600 }}>FHA · 30Y</div>
-                  <div className="tabular" style={{ fontSize: 22, fontWeight: 500, letterSpacing: "-0.018em", marginTop: 2 }}>6.125%</div>
-                </div>
-                <a href="#mortgage-calculator" style={{ marginLeft: "auto", fontSize: 12, fontWeight: 600, color: "var(--gold-deep)" }}>Compare all →</a>
-              </div>
-              <div style={{ fontSize: 10.5, color: "var(--ink-mute)", marginTop: 8, lineHeight: 1.5, maxWidth: 560 }}>
-                Sample rates shown for illustration only — not a rate quote, pre-qualification, or commitment to lend.
-                Your rate depends on credit, loan amount, property, and market conditions, and is subject to change. <a href="/contact" style={{ color: "var(--gold-deep)", fontWeight: 600 }}>Contact us for a personalized quote.</a>
+              <div style={{ fontSize: 13, color: "var(--ink-soft)", lineHeight: 1.5, maxWidth: 560 }}>
+                Rates change daily and depend on your credit, loan amount, and property. <a href="/contact" style={{ color: "var(--gold-deep)", fontWeight: 600 }}>Contact us for a personalized quote.</a>
               </div>
             </div>
           </div>
