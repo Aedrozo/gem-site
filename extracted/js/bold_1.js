@@ -280,12 +280,12 @@ function BoldHome() {
                 Most lenders close the deal and disappear. We manage your mortgage for the next thirty years — through every rate cycle and life stage in between.
               </p>
               <div style={{ display: "flex", gap: 12, marginBottom: 48 }}>
-                <a href="#" style={{
+                <a href="https://neohomeloans.com/start/r/130389" target="_blank" rel="noopener" style={{
                   display: "inline-flex", alignItems: "center", gap: 8,
                   padding: "14px 24px", fontSize: 15, fontWeight: 600,
                   background: "var(--ink)", color: "#fff", borderRadius: 10,
                   boxShadow: "0 6px 20px -6px rgba(10,10,10,.4)"
-                }}>See if we're a fit →</a>
+                }}>Get Pre-Approved →</a>
                 <a href="https://youtube.com/channel/UCR_MAH3M-_tpM8SzdtaluCg" target="_blank" rel="noopener" style={{
                   display: "inline-flex", alignItems: "center", gap: 10,
                   padding: "14px 22px", fontSize: 15, fontWeight: 600,

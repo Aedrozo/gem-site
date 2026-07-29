@@ -1516,7 +1516,7 @@ function BoldHome() {
       marginBottom: 48
     }
   }, /*#__PURE__*/React.createElement("a", {
-    href: "https://gemteam.youcanbook.me",
+    href: "https://neohomeloans.com/start/r/130389",
     target: "_blank",
     rel: "noopener",
     style: {
@@ -1531,7 +1531,7 @@ function BoldHome() {
       borderRadius: 10,
       boxShadow: "0 6px 20px -6px rgba(10,10,10,.4)"
     }
-  }, "See if we're a fit \u2192"), /*#__PURE__*/React.createElement("a", {
+  }, "Get Pre-Approved \u2192"), /*#__PURE__*/React.createElement("a", {
     href: "https://youtube.com/channel/UCR_MAH3M-_tpM8SzdtaluCg",
     target: "_blank",
     rel: "noopener",
@@ -1595,7 +1595,7 @@ function BoldHome() {
       objectPosition: "center"
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/hero.mp4?v=1785264448517",
+    src: "/assets/hero.mp4?v=1785299421323",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -1671,7 +1671,7 @@ function BoldHome() {
       opacity: 0.55
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/bento.mp4?v=1785264448517",
+    src: "/assets/bento.mp4?v=1785299421323",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -4447,7 +4447,7 @@ function StoryVideoSection() {
       opacity: 0.5
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/bento.mp4?v=1785264448517",
+    src: "/assets/bento.mp4?v=1785299421323",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
