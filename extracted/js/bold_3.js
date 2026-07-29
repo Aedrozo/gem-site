@@ -171,18 +171,7 @@ function BoldHomeMobile() {
           <span style={{ color: "var(--gold)", letterSpacing: ".1em" }}>★★★★★</span>
           <strong style={{ color: "var(--ink)" }}>4.86</strong> · 202 verified reviews
         </div>
-        <div className="col gap-3">
-          {TESTIMONIALS.map((t, i) => (
-            <div key={i} className="b-card" style={{ padding: 22 }}>
-              <div style={{ color: "var(--gold)", fontSize: 12, letterSpacing: ".15em", marginBottom: 12 }}>★★★★★</div>
-              <p style={{ fontSize: 15.5, lineHeight: 1.45, marginBottom: 14, letterSpacing: "-0.008em" }}>"{t.quote}"</p>
-              <div style={{ borderTop: "1px solid var(--line)", paddingTop: 12 }}>
-                <div style={{ fontSize: 13, fontWeight: 600 }}>{t.name}</div>
-                <div style={{ fontSize: 11.5, color: "var(--ink-soft)", marginTop: 2 }}>{t.detail}</div>
-              </div>
-            </div>
-          ))}
-        </div>
+        <ReviewCarousel perView={1} />
         <a href="https://www.experience.com/reviews/megan-sawamura-401537" target="_blank" rel="noopener" className="b-btn b-btn-outline" style={{ justifyContent: "center", width: "100%", padding: "13px", marginTop: 18 }}>Read all reviews on Experience.com →</a>
       </section>
 

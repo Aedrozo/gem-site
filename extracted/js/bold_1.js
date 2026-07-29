@@ -599,36 +599,7 @@ function BoldHome() {
               <h2 className="b-h2" style={{ maxWidth: 720 }}>The proof <span style={{ color: "var(--gold-deep)" }}>shows up</span> at closing.</h2>
             </div>
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 20 }}>
-            {TESTIMONIALS.map((t, i) => {
-              const grads = [
-                "linear-gradient(135deg, #5BC2E7 0%, #2EB6DE 100%)",
-                "linear-gradient(135deg, #0A0A0A 0%, #2A4163 100%)",
-                "linear-gradient(135deg, #B8E2F0 0%, #5BC2E7 100%)",
-              ];
-              return (
-                <div key={i} style={{ padding: 32, background: "#fff", border: "1px solid var(--line)", borderRadius: 16,
-                  display: "flex", flexDirection: "column", gap: 20, minHeight: 320, position: "relative", overflow: "hidden", transition: "all .2s" }}>
-                  <div style={{ position: "absolute", top: -10, right: 24, fontSize: 110, color: "var(--accent-tint)", fontFamily: "Georgia, serif", lineHeight: 1, fontStyle: "italic" }}>"</div>
-                  <div style={{ color: "var(--gold)", fontSize: 14, letterSpacing: ".15em", position: "relative" }}>★★★★★</div>
-                  <p style={{ fontSize: 17, lineHeight: 1.5, color: "var(--ink)", letterSpacing: "-0.008em", flex: 1, position: "relative" }}>
-                    {t.quote}
-                  </p>
-                  <div style={{ borderTop: "1px solid var(--line)", paddingTop: 16, display: "flex", alignItems: "center", gap: 12 }}>
-                    <div style={{ width: 40, height: 40, borderRadius: 20, background: grads[i],
-                      color: "#fff", display: "grid", placeItems: "center", fontSize: 13, fontWeight: 700, letterSpacing: "0.02em",
-                      boxShadow: "0 4px 12px -4px rgba(0,0,0,0.25)" }}>
-                      {t.name.split(" ").map(x => x[0]).join("").slice(0, 2)}
-                    </div>
-                    <div>
-                      <div style={{ fontSize: 13, fontWeight: 600 }}>{t.name}</div>
-                      <div style={{ fontSize: 11, color: "var(--ink-soft)", marginTop: 2 }}>{t.detail}</div>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+          <ReviewCarousel perView={3} />
           <div style={{ marginTop: 36, display: "flex", justifyContent: "center", gap: 14, alignItems: "center", flexWrap: "wrap" }}>
             <span style={{ display: "inline-flex", alignItems: "center", gap: 8, fontSize: 14.5, color: "var(--ink-soft)" }}>
               <span style={{ color: "var(--gold)", letterSpacing: ".1em" }}>★★★★★</span>
