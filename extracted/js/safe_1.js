@@ -20,7 +20,7 @@ function SafeNav({ active = "Home" }) {
         ))}
       </nav>
       <div className="row gap-3" style={{ alignItems: "center" }}>
-        <a href="#" className="s-btn s-btn-ghost" style={{ fontSize: 13 }}>(858) 876-2506</a>
+        <a href="#" className="s-btn s-btn-ghost" style={{ fontSize: 13 }}>(858) 567-2233</a>
         <a href="#" className="s-btn s-btn-primary">Apply now →</a>
       </div>
     </header>
@@ -64,8 +64,8 @@ function SafeFooter() {
           <div>
             <div style={{ fontSize: 12, color: "#6B7B95", marginBottom: 14, letterSpacing: ".1em", fontFamily:"var(--font-mono)" }}>CONTACT</div>
             <div style={{ fontSize: 14, lineHeight: 1.7, color: "#D9DEE6" }}>
-              (858) 876-2506<br/>
-              hello@gemhometeam.com<br/>
+              (858) 567-2233<br/>
+              Team@GemHomeTeam.com<br/>
               <br/>
               10089 Willow Creek Rd<br/>
               Suite 200, Office 294<br/>

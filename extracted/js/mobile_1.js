@@ -20,7 +20,7 @@ function MobHeader() {
         fontSize: 11, fontWeight: 500
       }}>
         <span>NMLS #972639</span>
-        <a href="tel:8588762506" style={{ color: "var(--ink-on-cyan)", fontWeight: 600 }}>📞 (858) 876-2506</a>
+        <a href="tel:8585672233" style={{ color: "var(--ink-on-cyan)", fontWeight: 600 }}>📞 (858) 567-2233</a>
       </div>
       <header style={{
         display: "grid", gridTemplateColumns: "1fr auto 1fr", alignItems: "center",
@@ -426,8 +426,8 @@ function BoldContactMobile() {
       {/* Contact rows */}
       <section style={{ padding: "0 20px 8px" }}>
         {[
-          ["Call", "(858) 876-2506", "Mon–Fri 8a–6p PT"],
-          ["Email", "hello@gemhometeam.com", "Replies within 4 hrs"],
+          ["Call", "(858) 567-2233", "Mon–Fri 8a–6p PT"],
+          ["Email", "Team@GemHomeTeam.com", "Replies within 4 hrs"],
           ["Visit", "10089 Willow Creek Rd, Suite 200", "San Diego, CA 92131"],
         ].map(([k, v, sub]) => (
           <div key={k} style={{ padding: "18px 0", borderTop: "1px solid var(--line)" }}>

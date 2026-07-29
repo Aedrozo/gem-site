@@ -128,8 +128,8 @@ const jsonLd = {
   name: "The GEM Home Team at NEO Home Loans",
   description: "San Diego mortgage lending, powered by Better — managed for the next 30 years, not just to closing.",
   url: ORIGIN + "/",
-  telephone: "+1-858-876-2506",
-  email: "hello@gemhometeam.com",
+  telephone: "+1-858-567-2233",
+  email: "Team@GemHomeTeam.com",
   image: ORIGIN + "/og-image.jpg",
   logo: ORIGIN + "/apple-touch-icon.png",
   areaServed: [{ "@type": "City", name: "San Diego" }, { "@type": "State", name: "California" }],
@@ -197,7 +197,7 @@ const html = `<!DOCTYPE html>
     <div style="max-width:680px;margin:48px auto;padding:0 24px;font-family:system-ui;line-height:1.6;color:#0A0A0A">
       <h1>The GEM Home Team at NEO Home Loans — San Diego</h1>
       <p>San Diego mortgage lending, powered by Better — your mortgage managed for the next 30 years, not just to closing day. We offer conventional, FHA, VA, jumbo, and physician loans.</p>
-      <p>Call <a href="tel:+18588762506">(858) 876-2506</a> · Email <a href="mailto:hello@gemhometeam.com">hello@gemhometeam.com</a> · 10089 Willow Creek Rd, Suite 200, San Diego, CA 92131.</p>
+      <p>Call <a href="tel:+18585672233">(858) 567-2233</a> · Email <a href="mailto:Team@GemHomeTeam.com">Team@GemHomeTeam.com</a> · 10089 Willow Creek Rd, Suite 200, San Diego, CA 92131.</p>
       <p>Pages: <a href="/experience">The NEO Experience</a> · <a href="/technology">Technology</a> · <a href="/about">About</a> · <a href="/va-calculator">VA Loan Calculator</a> · <a href="/total-cost-analysis">Total Cost Analysis</a> · <a href="/contact">Contact</a>.</p>
       <p>This site requires JavaScript for the full experience.</p>
     </div>

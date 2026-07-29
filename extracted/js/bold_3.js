@@ -403,7 +403,7 @@ function FeaturesContactSection() {
             <div style={{ display: "flex", flexDirection: "column", gap: 16, paddingTop: 24, borderTop: "1px solid var(--line)" }}>
               <div>
                 <div style={{ fontSize: 11, color: "var(--ink-soft)", marginBottom: 4, fontWeight: 500 }}>Call</div>
-                <a href="tel:8588762506" style={{ fontSize: 16, color: "var(--ink)", fontWeight: 500 }}>(858) 876-2506</a>
+                <a href="tel:8585672233" style={{ fontSize: 16, color: "var(--ink)", fontWeight: 500 }}>(858) 567-2233</a>
               </div>
               <div>
                 <div style={{ fontSize: 11, color: "var(--ink-soft)", marginBottom: 4, fontWeight: 500 }}>Office</div>
@@ -1004,8 +1004,8 @@ function BoldContact() {
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1.4fr", gap: 80, alignItems: "start" }}>
             <div>
               {[
-                ["Call", "(858) 876-2506", "Mon–Fri 8a–6p PT"],
-                ["Email", "hello@gemhometeam.com", "Replies within 4 hrs"],
+                ["Call", "(858) 567-2233", "Mon–Fri 8a–6p PT"],
+                ["Email", "Team@GemHomeTeam.com", "Replies within 4 hrs"],
                 ["Visit", "10089 Willow Creek Rd, Suite 200", "San Diego, CA 92131"],
               ].map(([k, v, sub]) => (
                 <div key={k} style={{ padding: "20px 0", borderTop: "1px solid var(--line)" }}>

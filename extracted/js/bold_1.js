@@ -132,8 +132,8 @@ function BoldFooter() {
               ["Contact", "/contact"],
             ]],
             ["Contact", [
-              ["(858) 876-2506", "tel:+18588762506"],
-              ["hello@gemhometeam.com", "mailto:hello@gemhometeam.com"],
+              ["(858) 567-2233", "tel:+18585672233"],
+              ["Team@GemHomeTeam.com", "mailto:Team@GemHomeTeam.com"],
               ["10089 Willow Creek Rd, Suite 200", null],
               ["San Diego, CA 92131", null],
             ]],
@@ -652,7 +652,7 @@ function BoldHome() {
               <div className="b-eyebrow" style={{ color: "var(--gold-deep)", marginBottom: 14 }}>Questions</div>
               <h2 className="b-h2" style={{ maxWidth: 360, marginBottom: 24 }}>Things people <span style={{ color: "var(--gold-deep)" }}>actually</span> ask us.</h2>
               <p className="b-body" style={{ maxWidth: 320 }}>
-                Still wondering? Email <a href="mailto:hello@gemhometeam.com" style={{ color: "var(--gold-deep)", fontWeight: 500 }}>hello@gemhometeam.com</a> — usually a reply within 4 hours.
+                Still wondering? Email <a href="mailto:Team@GemHomeTeam.com" style={{ color: "var(--gold-deep)", fontWeight: 500 }}>Team@GemHomeTeam.com</a> — usually a reply within 4 hours.
               </p>
             </div>
             <div>

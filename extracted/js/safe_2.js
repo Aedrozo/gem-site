@@ -164,8 +164,8 @@ function SafeHomeMobile() {
 
       <footer style={{ padding: "32px 20px", background: "var(--bg-deep)", color: "#9BA8BD", fontSize: 12 }}>
         <div style={{ marginBottom: 16, color: "#fff" }}>GEM Home Team</div>
-        <div style={{ marginBottom: 6 }}>(858) 876-2506</div>
-        <div style={{ marginBottom: 16 }}>hello@gemhometeam.com</div>
+        <div style={{ marginBottom: 6 }}>(858) 567-2233</div>
+        <div style={{ marginBottom: 16 }}>Team@GemHomeTeam.com</div>
         <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "#6B7B95" }}>© 2026 · NMLS #972639 · Equal Housing Lender</div>
       </footer>
     </div>
@@ -442,8 +442,8 @@ function SafeContact() {
 
               <div className="col gap-4" style={{ marginBottom: 40 }}>
                 {[
-                  ["📞", "Call", "(858) 876-2506", "Mon–Fri 8a–6p PT"],
-                  ["✉️", "Email", "hello@gemhometeam.com", "Replies within 4 hrs"],
+                  ["📞", "Call", "(858) 567-2233", "Mon–Fri 8a–6p PT"],
+                  ["✉️", "Email", "Team@GemHomeTeam.com", "Replies within 4 hrs"],
                   ["📍", "Office", "10089 Willow Creek Rd, Suite 200", "San Diego, CA 92131"],
                 ].map(([ic, k, v, sub]) => (
                   <div key={k} style={{ display:"grid", gridTemplateColumns:"36px 1fr", gap: 16, padding:"16px 0", borderTop: "1px solid var(--line)" }}>

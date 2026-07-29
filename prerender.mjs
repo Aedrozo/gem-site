@@ -16,7 +16,7 @@ const META = {
   "/experience":    { dir: "experience",    title: "The NEO Experience", desc: "Mortgage Under Management, the NEO app, home concierge, and annual reviews — what you get when your lender stays for the next 30 years." },
   "/technology":    { dir: "technology",    title: "Technology", desc: "A San Diego team on Better's AI-native mortgage platform — the first fintech to fund over $110 billion in home loans." },
   "/about":         { dir: "about",         title: "About Megan & the GEM Home Team", desc: "Meet Megan Sawamura (NMLS #972639) and the GEM Home Team — San Diego mortgage advisors building generational wealth." },
-  "/contact":       { dir: "contact",       title: "Contact", desc: "Talk to the GEM Home Team. Call (858) 876-2506 or start a conversation about your timeline and numbers." },
+  "/contact":       { dir: "contact",       title: "Contact", desc: "Talk to the GEM Home Team. Call (858) 567-2233 or start a conversation about your timeline and numbers." },
   "/va-calculator": { dir: "va-calculator", title: "VA Loan Calculator", desc: "A VA loan calculator built for service members and veterans — funding fee, disability waiver, BAH, and San Diego MHA modeled in." },
   "/total-cost-analysis": { dir: "total-cost-analysis", title: "Total Cost Analysis", desc: "Compare the full lifetime cost of two mortgage scenarios — monthly payment, total interest, total cost, and payoff date." },
   "/insights": { dir: "insights", title: "Insights & Guides", desc: "Plain-English mortgage guides from The GEM Home Team — buying, refinancing, VA loans, first-time buyers, and how to run the math." },

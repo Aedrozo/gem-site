@@ -1102,7 +1102,7 @@ function BoldFooter() {
       color: "rgba(255,255,255,0.75)",
       transition: "all .15s"
     }
-  }, icon)))), [["Resources", [["Mortgage calculator", "/#mortgage-calculator"], ["VA loan calculator", "/va-calculator"], ["First-time buyers", "/experience"], ["Refinance", "/insights/when-to-refinance"], ["The NEO Experience", "/experience"]]], ["Company", [["About Megan", "/about"], ["The team", "/about"], ["Reviews", "/about"], ["Technology", "/technology"], ["Contact", "/contact"]]], ["Contact", [["(858) 876-2506", "tel:+18588762506"], ["hello@gemhometeam.com", "mailto:hello@gemhometeam.com"], ["10089 Willow Creek Rd, Suite 200", null], ["San Diego, CA 92131", null]]]].map(([head, items]) => /*#__PURE__*/React.createElement("div", {
+  }, icon)))), [["Resources", [["Mortgage calculator", "/#mortgage-calculator"], ["VA loan calculator", "/va-calculator"], ["First-time buyers", "/experience"], ["Refinance", "/insights/when-to-refinance"], ["The NEO Experience", "/experience"]]], ["Company", [["About Megan", "/about"], ["The team", "/about"], ["Reviews", "/about"], ["Technology", "/technology"], ["Contact", "/contact"]]], ["Contact", [["(858) 567-2233", "tel:+18585672233"], ["Team@GemHomeTeam.com", "mailto:Team@GemHomeTeam.com"], ["10089 Willow Creek Rd, Suite 200", null], ["San Diego, CA 92131", null]]]].map(([head, items]) => /*#__PURE__*/React.createElement("div", {
     key: head
   }, /*#__PURE__*/React.createElement("div", {
     style: {
@@ -1595,7 +1595,7 @@ function BoldHome() {
       objectPosition: "center"
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/hero.mp4?v=1785299421323",
+    src: "/assets/hero.mp4?v=1785300012142",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -1671,7 +1671,7 @@ function BoldHome() {
       opacity: 0.55
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/bento.mp4?v=1785299421323",
+    src: "/assets/bento.mp4?v=1785300012142",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -2511,12 +2511,12 @@ function BoldHome() {
       maxWidth: 320
     }
   }, "Still wondering? Email ", /*#__PURE__*/React.createElement("a", {
-    href: "mailto:hello@gemhometeam.com",
+    href: "mailto:Team@GemHomeTeam.com",
     style: {
       color: "var(--gold-deep)",
       fontWeight: 500
     }
-  }, "hello@gemhometeam.com"), " \u2014 usually a reply within 4 hours.")), /*#__PURE__*/React.createElement("div", null, FAQS.map((f, i) => /*#__PURE__*/React.createElement("div", {
+  }, "Team@GemHomeTeam.com"), " \u2014 usually a reply within 4 hours.")), /*#__PURE__*/React.createElement("div", null, FAQS.map((f, i) => /*#__PURE__*/React.createElement("div", {
     key: i,
     style: {
       borderTop: "1px solid var(--line)",
@@ -4447,7 +4447,7 @@ function StoryVideoSection() {
       opacity: 0.5
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/bento.mp4?v=1785299421323",
+    src: "/assets/bento.mp4?v=1785300012142",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -5607,13 +5607,13 @@ function FeaturesContactSection() {
       fontWeight: 500
     }
   }, "Call"), /*#__PURE__*/React.createElement("a", {
-    href: "tel:8588762506",
+    href: "tel:8585672233",
     style: {
       fontSize: 16,
       color: "var(--ink)",
       fontWeight: 500
     }
-  }, "(858) 876-2506")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+  }, "(858) 567-2233")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
     style: {
       fontSize: 11,
       color: "var(--ink-soft)",
@@ -7225,7 +7225,7 @@ function BoldContact() {
       gap: 80,
       alignItems: "start"
     }
-  }, /*#__PURE__*/React.createElement("div", null, [["Call", "(858) 876-2506", "Mon–Fri 8a–6p PT"], ["Email", "hello@gemhometeam.com", "Replies within 4 hrs"], ["Visit", "10089 Willow Creek Rd, Suite 200", "San Diego, CA 92131"]].map(([k, v, sub]) => /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", null, [["Call", "(858) 567-2233", "Mon–Fri 8a–6p PT"], ["Email", "Team@GemHomeTeam.com", "Replies within 4 hrs"], ["Visit", "10089 Willow Creek Rd, Suite 200", "San Diego, CA 92131"]].map(([k, v, sub]) => /*#__PURE__*/React.createElement("div", {
     key: k,
     style: {
       padding: "20px 0",
@@ -9044,7 +9044,9 @@ function BoldTech() {
       flexWrap: "wrap"
     }
   }, /*#__PURE__*/React.createElement("a", {
-    href: "#contact",
+    href: "https://gemteam.youcanbook.me",
+    target: "_blank",
+    rel: "noopener",
     className: "b-btn b-btn-dark",
     style: {
       padding: "14px 26px",
@@ -9115,12 +9117,12 @@ function MobHeader() {
       fontWeight: 500
     }
   }, /*#__PURE__*/React.createElement("span", null, "NMLS #972639"), /*#__PURE__*/React.createElement("a", {
-    href: "tel:8588762506",
+    href: "tel:8585672233",
     style: {
       color: "var(--ink-on-cyan)",
       fontWeight: 600
     }
-  }, "\uD83D\uDCDE (858) 876-2506")), /*#__PURE__*/React.createElement("header", {
+  }, "\uD83D\uDCDE (858) 567-2233")), /*#__PURE__*/React.createElement("header", {
     style: {
       display: "grid",
       gridTemplateColumns: "1fr auto 1fr",
@@ -10144,7 +10146,7 @@ function BoldContactMobile() {
     style: {
       padding: "0 20px 8px"
     }
-  }, [["Call", "(858) 876-2506", "Mon–Fri 8a–6p PT"], ["Email", "hello@gemhometeam.com", "Replies within 4 hrs"], ["Visit", "10089 Willow Creek Rd, Suite 200", "San Diego, CA 92131"]].map(([k, v, sub]) => /*#__PURE__*/React.createElement("div", {
+  }, [["Call", "(858) 567-2233", "Mon–Fri 8a–6p PT"], ["Email", "Team@GemHomeTeam.com", "Replies within 4 hrs"], ["Visit", "10089 Willow Creek Rd, Suite 200", "San Diego, CA 92131"]].map(([k, v, sub]) => /*#__PURE__*/React.createElement("div", {
     key: k,
     style: {
       padding: "18px 0",
@@ -15964,7 +15966,7 @@ const ROUTES = {
     d: "BoldContact",
     m: "BoldContactMobile",
     title: "Contact",
-    desc: "Talk to the GEM Home Team. Call (858) 876-2506 or start a conversation about your timeline and numbers."
+    desc: "Talk to the GEM Home Team. Call (858) 567-2233 or start a conversation about your timeline and numbers."
   },
   "/dashboard": {
     d: "BoldDashboard",

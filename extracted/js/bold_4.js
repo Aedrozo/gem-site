@@ -510,7 +510,7 @@ function BoldTech() {
             Whether you're paying cash, financing, or pledging crypto — start with a free 20-minute call.
           </p>
           <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
-            <a href="#contact" className="b-btn b-btn-dark" style={{ padding: "14px 26px", fontSize: 15, background: "#fff", color: "var(--ink)" }}>Schedule a call →</a>
+            <a href="#" className="b-btn b-btn-dark" style={{ padding: "14px 26px", fontSize: 15, background: "#fff", color: "var(--ink)" }}>Schedule a call →</a>
             <a href="https://neohomeloans.com/start/r/130389" target="_blank" rel="noopener" className="b-btn"
               style={{ padding: "14px 26px", fontSize: 15, background: "transparent", border: "1.5px solid var(--ink-on-cyan)", color: "var(--ink-on-cyan)" }}>
               APPLY NOW
