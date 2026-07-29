@@ -218,9 +218,9 @@ function BoldFooter() {
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 16, fontSize: 11, color: "rgba(255,255,255,.5)" }}>
           <span>© 2026 The GEM Home Team at NEO Home Loans · All rights reserved</span>
           <div style={{ display: "flex", gap: 20 }}>
-            <a href="https://better.com/privacy-policy" target="_blank" rel="noopener" style={{ color: "rgba(255,255,255,0.65)" }}>Privacy policy</a>
-            <a href="https://better.com/terms-of-use" target="_blank" rel="noopener" style={{ color: "rgba(255,255,255,0.65)" }}>Terms of use</a>
-            <a href="https://better.com/accessibility" target="_blank" rel="noopener" style={{ color: "rgba(255,255,255,0.65)" }}>Accessibility</a>
+            <a href="https://better.com/about-us/privacy-policy" target="_blank" rel="noopener" style={{ color: "rgba(255,255,255,0.65)" }}>Privacy policy</a>
+            <a href="https://better.com/about-us/terms-of-use" target="_blank" rel="noopener" style={{ color: "rgba(255,255,255,0.65)" }}>Terms of use</a>
+            <a href="mailto:Team@GemHomeTeam.com?subject=Accessibility%20feedback" style={{ color: "rgba(255,255,255,0.65)" }}>Accessibility</a>
             <a href="http://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/330511" target="_blank" rel="noopener" style={{ color: "rgba(255,255,255,0.65)" }}>NMLS Consumer Access</a>
             <a href="/sitemap.xml" style={{ color: "rgba(255,255,255,0.65)" }}>Sitemap</a>
           </div>

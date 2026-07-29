@@ -1352,23 +1352,21 @@ function BoldFooter() {
       gap: 20
     }
   }, /*#__PURE__*/React.createElement("a", {
-    href: "https://better.com/privacy-policy",
+    href: "https://better.com/about-us/privacy-policy",
     target: "_blank",
     rel: "noopener",
     style: {
       color: "rgba(255,255,255,0.65)"
     }
   }, "Privacy policy"), /*#__PURE__*/React.createElement("a", {
-    href: "https://better.com/terms-of-use",
+    href: "https://better.com/about-us/terms-of-use",
     target: "_blank",
     rel: "noopener",
     style: {
       color: "rgba(255,255,255,0.65)"
     }
   }, "Terms of use"), /*#__PURE__*/React.createElement("a", {
-    href: "https://better.com/accessibility",
-    target: "_blank",
-    rel: "noopener",
+    href: "mailto:Team@GemHomeTeam.com?subject=Accessibility%20feedback",
     style: {
       color: "rgba(255,255,255,0.65)"
     }
@@ -1582,7 +1580,7 @@ function BoldHome() {
       objectPosition: "center"
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/hero.mp4?v=1785300722049",
+    src: "/assets/hero.mp4?v=1785301161614",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -1658,7 +1656,7 @@ function BoldHome() {
       opacity: 0.55
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/bento.mp4?v=1785300722049",
+    src: "/assets/bento.mp4?v=1785301161614",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -4434,7 +4432,7 @@ function StoryVideoSection() {
       opacity: 0.5
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/bento.mp4?v=1785300722049",
+    src: "/assets/bento.mp4?v=1785301161614",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
