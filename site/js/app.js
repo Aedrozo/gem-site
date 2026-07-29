@@ -1812,7 +1812,7 @@ function BoldHome() {
       objectPosition: "center"
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/hero.mp4?v=1785302872537",
+    src: "/assets/hero.mp4?v=1785304672029",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -1888,7 +1888,7 @@ function BoldHome() {
       opacity: 0.55
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/bento.mp4?v=1785302872537",
+    src: "/assets/bento.mp4?v=1785304672029",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -4582,7 +4582,7 @@ function StoryVideoSection() {
       opacity: 0.5
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/bento.mp4?v=1785302872537",
+    src: "/assets/bento.mp4?v=1785304672029",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -5236,137 +5236,7 @@ function BoldHomeMobile() {
       border: "1.5px solid var(--ink-on-cyan)",
       color: "var(--ink-on-cyan)"
     }
-  }, "APPLY NOW"))), /*#__PURE__*/React.createElement("footer", {
-    style: {
-      padding: "40px 20px",
-      background: "#0A0A0A",
-      color: "#fff"
-    }
-  }, /*#__PURE__*/React.createElement("img", {
-    src: assetUrl("/assets/neo-lockup-white.webp"),
-    alt: "The GEM Home Team at NEO Home Loans",
-    style: {
-      height: 24,
-      width: "auto",
-      marginBottom: 20,
-      display: "block"
-    }
-  }), /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: "flex",
-      flexWrap: "wrap",
-      gap: 16,
-      alignItems: "center",
-      padding: "18px 0",
-      borderTop: "1px solid rgba(255,255,255,0.1)",
-      borderBottom: "1px solid rgba(255,255,255,0.1)",
-      marginBottom: 20
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      display: "inline-flex",
-      alignItems: "center",
-      gap: 8
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      width: 30,
-      height: 30,
-      borderRadius: 4,
-      border: "1.5px solid rgba(255,255,255,0.4)",
-      position: "relative"
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      position: "absolute",
-      inset: 3,
-      display: "grid",
-      gridTemplateColumns: "1fr 1fr",
-      gridTemplateRows: "1fr 1fr",
-      gap: 1
-    }
-  }, /*#__PURE__*/React.createElement("div", {
-    style: {
-      background: "rgba(255,255,255,0.4)"
-    }
-  }), /*#__PURE__*/React.createElement("div", null), /*#__PURE__*/React.createElement("div", null), /*#__PURE__*/React.createElement("div", {
-    style: {
-      background: "rgba(255,255,255,0.4)"
-    }
-  }))), /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontSize: 10,
-      color: "rgba(255,255,255,0.85)",
-      fontWeight: 600,
-      letterSpacing: ".04em",
-      lineHeight: 1.3
-    }
-  }, "EQUAL HOUSING", /*#__PURE__*/React.createElement("br", null), "LENDER")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontSize: 9,
-      color: "rgba(255,255,255,0.55)",
-      letterSpacing: ".08em",
-      fontWeight: 600
-    }
-  }, "COMPANY NMLS"), /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontSize: 12,
-      color: "#fff",
-      fontWeight: 500,
-      fontVariantNumeric: "tabular-nums"
-    }
-  }, "#330511 \xB7 Better Mortgage")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontSize: 9,
-      color: "rgba(255,255,255,0.55)",
-      letterSpacing: ".08em",
-      fontWeight: 600
-    }
-  }, "INDIVIDUAL NMLS"), /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontSize: 12,
-      color: "#fff",
-      fontWeight: 500,
-      fontVariantNumeric: "tabular-nums"
-    }
-  }, "#972639 \xB7 Megan Sawamura"))), /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontSize: 10.5,
-      color: "rgba(255,255,255,0.45)",
-      lineHeight: 1.6,
-      marginBottom: 20
-    }
-  }, /*#__PURE__*/React.createElement("p", {
-    style: {
-      marginBottom: 8
-    }
-  }, "This website is for informational and educational purposes only and is not an offer, rate quote, pre-qualification, pre-approval, or commitment to lend. All loans are subject to credit approval, income and asset verification, property appraisal, and underwriting; rates, terms, and programs are subject to change without notice and are not guaranteed. Production volume, transaction counts, client ratings, and any rankings or awards (including \"Top 1% of U.S. Loan Officers\") reflect historical results from internal records or third-party sources and are not a guarantee of future results. Calculator outputs and any payment, savings, or dashboard figures shown are hypothetical illustrations for example purposes only and do not reflect an actual loan offer."), /*#__PURE__*/React.createElement("p", {
-    style: {
-      marginBottom: 8
-    }
-  }, "\xA9 2026 Better Home & Finance Holding Company and/or its affiliates. Better is a family of companies. Better Mortgage Corporation provides home loans; Better Real Estate, LLC and Better Real Estate California Inc License #02164055 provides real estate services; Better Cover, LLC sells insurance products; and Better Settlement Services provides title insurance services; and Better Inspect, LLC provides home inspection services. All rights reserved."), /*#__PURE__*/React.createElement("p", {
-    style: {
-      marginBottom: 8
-    }
-  }, "Home lending products offered by Better Mortgage Corporation. Better Mortgage Corporation is a direct lender. NMLS #330511. 1 World Trade Center, 80th Floor, New York, NY 10007. Loans made or arranged pursuant to a California Finance Lenders Law License. Not available in all states. Equal Housing Lender. ", /*#__PURE__*/React.createElement("a", {
-    href: "http://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/330511",
-    style: {
-      color: "rgba(255,255,255,0.7)",
-      textDecoration: "underline"
-    }
-  }, "NMLS Consumer Access"), "."), /*#__PURE__*/React.createElement("p", {
-    style: {
-      marginBottom: 8
-    }
-  }, "Better Mortgage Corporation, Better Real Estate, LLC, Better Settlement Services, LLC, Better Cover, LLC, Better Connect, and Better Inspect, LLC are separate operating subsidiaries of Better Home & Finance Holding Company. Each company is a separate legal entity. Products not available in all states."), /*#__PURE__*/React.createElement("p", null, "Licensed by the Department of Financial Protection and Innovation under the California Residential Mortgage Lending Act. CA-DRE #02164055.")), /*#__PURE__*/React.createElement("div", {
-    style: {
-      fontSize: 11,
-      color: "rgba(255,255,255,.55)",
-      letterSpacing: ".02em",
-      borderTop: "1px solid rgba(255,255,255,0.1)",
-      paddingTop: 16
-    }
-  }, "\xA9 2026 The GEM Home Team at NEO Home Loans \xB7 All rights reserved")));
+  }, "APPLY NOW"))), /*#__PURE__*/React.createElement(MobFooter, null));
 }
 
 /* ==================== BOLD FEATURES (modern) ==================== */
@@ -9432,6 +9302,66 @@ function MobHeader() {
 
 /* ---------- Reusable mobile footer ---------- */
 function MobFooter() {
+  const dimLink = {
+    color: "rgba(255,255,255,0.7)",
+    textDecoration: "underline"
+  };
+  const navLink = {
+    color: "rgba(255,255,255,0.75)",
+    fontSize: 13,
+    padding: "6px 0",
+    display: "block"
+  };
+  const socials = [["Instagram", "https://www.instagram.com/gemhometeam/", /*#__PURE__*/React.createElement("svg", {
+    key: "ig",
+    width: "15",
+    height: "15",
+    viewBox: "0 0 24 24",
+    fill: "none"
+  }, /*#__PURE__*/React.createElement("rect", {
+    x: "2.5",
+    y: "2.5",
+    width: "19",
+    height: "19",
+    rx: "5",
+    stroke: "currentColor",
+    strokeWidth: "1.8"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: "12",
+    cy: "12",
+    r: "4",
+    stroke: "currentColor",
+    strokeWidth: "1.8"
+  }), /*#__PURE__*/React.createElement("circle", {
+    cx: "17.5",
+    cy: "6.5",
+    r: "1.2",
+    fill: "currentColor"
+  }))], ["Facebook", "https://facebook.com/GEMTeamMortgage/", /*#__PURE__*/React.createElement("svg", {
+    key: "fb",
+    width: "15",
+    height: "15",
+    viewBox: "0 0 24 24",
+    fill: "currentColor"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.5 1.6-1.5h1.3V4.9c-.2 0-1-.1-1.9-.1-1.9 0-3.2 1.2-3.2 3.3V11H8.5v3h2.8v7h2.2z"
+  }))], ["YouTube", "https://youtube.com/channel/UCR_MAH3M-_tpM8SzdtaluCg", /*#__PURE__*/React.createElement("svg", {
+    key: "yt",
+    width: "15",
+    height: "15",
+    viewBox: "0 0 24 24",
+    fill: "currentColor"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8c1.6.4 7.8.4 7.8.4s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15.2V8.8L15.5 12 10 15.2z"
+  }))], ["LinkedIn", "https://linkedin.com/in/megansawamura", /*#__PURE__*/React.createElement("svg", {
+    key: "li",
+    width: "15",
+    height: "15",
+    viewBox: "0 0 24 24",
+    fill: "currentColor"
+  }, /*#__PURE__*/React.createElement("path", {
+    d: "M6.5 8.8H3.6V21h2.9V8.8zM5 7.4a1.7 1.7 0 1 0 0-3.4 1.7 1.7 0 0 0 0 3.4zM21 14.3c0-3.2-1.7-4.7-4-4.7a3.5 3.5 0 0 0-3.1 1.7V8.8H11V21h2.9v-6.5c0-1.7.8-2.7 2.2-2.7 1.3 0 2 .9 2 2.7V21H21v-6.7z"
+  }))]];
   return /*#__PURE__*/React.createElement("footer", {
     style: {
       padding: "40px 20px",
@@ -9444,10 +9374,96 @@ function MobFooter() {
     style: {
       height: 24,
       width: "auto",
-      marginBottom: 20,
+      marginBottom: 8,
       display: "block"
     }
   }), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      color: "rgba(255,255,255,.55)",
+      marginBottom: 16
+    }
+  }, "Powered by Better"), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      flexDirection: "column",
+      gap: 4,
+      marginBottom: 14
+    }
+  }, /*#__PURE__*/React.createElement("a", {
+    href: "tel:+18585672233",
+    style: {
+      color: "#fff",
+      fontSize: 14,
+      fontWeight: 500
+    }
+  }, "(858) 567-2233"), /*#__PURE__*/React.createElement("a", {
+    href: "mailto:Team@GemHomeTeam.com",
+    style: {
+      color: "rgba(255,255,255,0.75)",
+      fontSize: 13
+    }
+  }, "Team@GemHomeTeam.com")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      gap: 10,
+      marginBottom: 24
+    }
+  }, socials.map(([label, href, icon]) => /*#__PURE__*/React.createElement("a", {
+    key: label,
+    href: href,
+    target: "_blank",
+    rel: "noopener",
+    "aria-label": label,
+    style: {
+      width: 34,
+      height: 34,
+      borderRadius: 17,
+      border: "1px solid rgba(255,255,255,0.25)",
+      display: "grid",
+      placeItems: "center",
+      color: "rgba(255,255,255,0.8)"
+    }
+  }, icon))), /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr",
+      gap: "0 16px",
+      padding: "16px 0",
+      borderTop: "1px solid rgba(255,255,255,0.1)",
+      marginBottom: 18
+    }
+  }, /*#__PURE__*/React.createElement("a", {
+    href: "/#mortgage-calculator",
+    style: navLink
+  }, "Mortgage calculator"), /*#__PURE__*/React.createElement("a", {
+    href: "/about",
+    style: navLink
+  }, "About Megan"), /*#__PURE__*/React.createElement("a", {
+    href: "/va-calculator",
+    style: navLink
+  }, "VA loan calculator"), /*#__PURE__*/React.createElement("a", {
+    href: "/about",
+    style: navLink
+  }, "The team"), /*#__PURE__*/React.createElement("a", {
+    href: "/total-cost-analysis",
+    style: navLink
+  }, "Total Cost Analysis"), /*#__PURE__*/React.createElement("a", {
+    href: "/technology",
+    style: navLink
+  }, "Technology"), /*#__PURE__*/React.createElement("a", {
+    href: "/insights/when-to-refinance",
+    style: navLink
+  }, "Refinance"), /*#__PURE__*/React.createElement("a", {
+    href: "/contact",
+    style: navLink
+  }, "Contact"), /*#__PURE__*/React.createElement("a", {
+    href: "/insights",
+    style: navLink
+  }, "Insights & guides"), /*#__PURE__*/React.createElement("a", {
+    href: "/experience",
+    style: navLink
+  }, "The NEO Experience")), /*#__PURE__*/React.createElement("div", {
     style: {
       display: "flex",
       flexWrap: "wrap",
@@ -9536,25 +9552,95 @@ function MobFooter() {
     style: {
       marginBottom: 8
     }
-  }, "This website is for informational and educational purposes only and is not an offer, rate quote, pre-qualification, pre-approval, or commitment to lend. All loans are subject to credit approval, income and asset verification, property appraisal, and underwriting; rates, terms, and programs are subject to change without notice and are not guaranteed. Calculator outputs and any payment, savings, or dashboard figures shown are hypothetical illustrations for example purposes only and do not reflect an actual loan offer."), /*#__PURE__*/React.createElement("p", {
+  }, "This website is for informational and educational purposes only and is not an offer, rate quote, pre-qualification, pre-approval, or commitment to lend. All loans are subject to credit approval, income and asset verification, property appraisal, and underwriting; rates, terms, and programs are subject to change without notice and are not guaranteed. Production volume, transaction counts, client ratings, and any rankings or awards (including \u201CTop 1% of U.S. Loan Officers\u201D) reflect historical results from internal records or third-party sources and are not a guarantee of future results. Calculator outputs and any payment, savings, or dashboard figures shown are hypothetical illustrations for example purposes only and do not reflect an actual loan offer."), /*#__PURE__*/React.createElement("p", {
     style: {
       marginBottom: 8
     }
-  }, "\xA9 2026 Better Home & Finance Holding Company and/or its affiliates. Better is a family of companies. Home lending products offered by Better Mortgage Corporation, a direct lender. NMLS #330511. 1 World Trade Center, 80th Floor, New York, NY 10007. Loans made or arranged pursuant to a California Finance Lenders Law License. Not available in all states. Equal Housing Lender. ", /*#__PURE__*/React.createElement("a", {
-    href: "http://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/330511",
+  }, "\xA9 2026 Better Home & Finance Holding Company and/or its affiliates. Better is a family of companies. Better Mortgage Corporation provides home loans; Better Real Estate, LLC and Better Real Estate California Inc License #02164055 provides real estate services; Better Cover, LLC sells insurance products; and Better Settlement Services provides title insurance services; and Better Inspect, LLC provides home inspection services. All rights reserved. Better BMC operates under the name Better Mortgage Corporation in New York."), /*#__PURE__*/React.createElement("p", {
     style: {
-      color: "rgba(255,255,255,0.7)",
-      textDecoration: "underline"
+      marginBottom: 8
     }
-  }, "NMLS Consumer Access"), "."), /*#__PURE__*/React.createElement("p", null, "Licensed by the Department of Financial Protection and Innovation under the California Residential Mortgage Lending Act. CA-DRE #02164055.")), /*#__PURE__*/React.createElement("div", {
+  }, "Home lending products offered by Better Mortgage Corporation. Better Mortgage Corporation is a direct lender. NMLS #330511. 1 World Trade Center, 80th Floor, New York, NY 10007. Loans made or arranged pursuant to a California Finance Lenders Law License. Not available in all states. Equal Housing Lender. ", /*#__PURE__*/React.createElement("a", {
+    href: "http://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/330511",
+    style: dimLink
+  }, "NMLS Consumer Access"), "."), /*#__PURE__*/React.createElement("p", {
     style: {
-      fontSize: 11,
-      color: "rgba(255,255,255,.55)",
-      letterSpacing: ".02em",
+      marginBottom: 8
+    }
+  }, "Better Real Estate, LLC dba BRE, Better Home Services, BRE Services, LLC and Better Real Estate, and operating in the State of California through its wholly owned subsidiary Better Real Estate California Inc., is a licensed real estate brokerage and maintains its corporate headquarters at 325\u201341 Chestnut Street, Suite 826, Philadelphia, PA 19106. Here is a full listing of Better Real Estate, LLC's ", /*#__PURE__*/React.createElement("a", {
+    href: "https://better.com/with/better-realestate-license",
+    style: dimLink
+  }, "license numbers"), ". Better Real Estate, LLC provides access to real estate brokerage services via its nationwide network of partner brokerages and real estate agents (\"Better Real Estate Partner Agents\"). Equal Housing Opportunity. All rights reserved."), /*#__PURE__*/React.createElement("p", {
+    style: {
+      marginBottom: 8
+    }
+  }, /*#__PURE__*/React.createElement("a", {
+    href: "https://www.dos.ny.gov/licensing/docs/FairHousingNotice_new.pdf",
+    style: dimLink
+  }, "New York State Housing and Anti-Discrimination Notice"), " \xB7 ", /*#__PURE__*/React.createElement("a", {
+    href: "https://media.better.com/pdfs/NYStandardizedOperatingProcedures.pdf",
+    style: dimLink
+  }, "New York Standard Operating Procedures"), " \xB7 Texas Real Estate Commission: ", /*#__PURE__*/React.createElement("a", {
+    href: "https://www.har.com/mhf/terms/dispBrokerInfo?sitetype=aws&cid=645736",
+    style: dimLink
+  }, "Information About Brokerage Services"), " \xB7 ", /*#__PURE__*/React.createElement("a", {
+    href: "https://www.trec.texas.gov/sites/default/files/pdf-forms/CN%201-4-1_1.pdf",
+    style: dimLink
+  }, "Consumer Protection Notice"), "."), /*#__PURE__*/React.createElement("p", {
+    style: {
+      marginBottom: 8
+    }
+  }, "Better Settlement Services, LLC. 325\u201341 Chestnut Street, Suite 803, Philadelphia, PA 19106. Homeowners insurance policies are offered through Better Cover, LLC, a Pennsylvania Resident Producer Agency. License #881593. 325\u201341 Chestnut Street, Suite 807, Philadelphia, PA 19106. Insurance quotes and policies are offered through Better Cover, LLC. Here is a full listing of Better Cover, LLC's ", /*#__PURE__*/React.createElement("a", {
+    href: "https://www.bettercover.com/licenses",
+    style: dimLink
+  }, "license numbers"), ". Better Inspect, LLC maintains its corporate headquarters at 325\u201341 Chestnut Street, Suite 846, Philadelphia, PA 19106."), /*#__PURE__*/React.createElement("p", {
+    style: {
+      marginBottom: 8
+    }
+  }, "Better Mortgage Corporation, Better Real Estate, LLC, Better Settlement Services, LLC, Better Cover, LLC, Better Connect, and Better Inspect, LLC are separate operating subsidiaries of Better Home & Finance Holding Company. Each company is a separate legal entity operated and managed through its own management and governance structure as required by its state of incorporation, and applicable and legal and regulatory requirements. Products not available in all states."), /*#__PURE__*/React.createElement("p", null, "Any unauthorized use of any proprietary or intellectual property is strictly prohibited. All trademarks, service marks, trade names, logos, icons, and domain names are proprietary to Better Home & Finance Holding Company. Better Home & Finance Holding Company trademarks are federally registered with the U.S. Patent and Trademark Office. Better Cover is a registered trademark with the U.S. Patent and Trademark Office and is owned by Better Cover, LLC. Licensed by the Department of Financial Protection and Innovation under the California Residential Mortgage Lending Act. CA-DRE #02164055.")), /*#__PURE__*/React.createElement("div", {
+    style: {
       borderTop: "1px solid rgba(255,255,255,0.1)",
       paddingTop: 16
     }
-  }, "\xA9 2026 The GEM Home Team at NEO Home Loans \xB7 All rights reserved"));
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      display: "flex",
+      flexWrap: "wrap",
+      gap: "8px 18px",
+      fontSize: 11.5,
+      marginBottom: 12
+    }
+  }, /*#__PURE__*/React.createElement("a", {
+    href: "https://better.com/about-us/privacy-policy",
+    target: "_blank",
+    rel: "noopener",
+    style: {
+      color: "rgba(255,255,255,0.65)"
+    }
+  }, "Privacy policy"), /*#__PURE__*/React.createElement("a", {
+    href: "https://better.com/about-us/terms-of-use",
+    target: "_blank",
+    rel: "noopener",
+    style: {
+      color: "rgba(255,255,255,0.65)"
+    }
+  }, "Terms of use"), /*#__PURE__*/React.createElement("a", {
+    href: "mailto:Team@GemHomeTeam.com?subject=Accessibility%20feedback",
+    style: {
+      color: "rgba(255,255,255,0.65)"
+    }
+  }, "Accessibility"), /*#__PURE__*/React.createElement("a", {
+    href: "/sitemap.xml",
+    style: {
+      color: "rgba(255,255,255,0.65)"
+    }
+  }, "Sitemap")), /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: 11,
+      color: "rgba(255,255,255,.55)",
+      letterSpacing: ".02em"
+    }
+  }, "\xA9 2026 The GEM Home Team at NEO Home Loans \xB7 All rights reserved")));
 }
 
 /* Shared section heading for mobile */

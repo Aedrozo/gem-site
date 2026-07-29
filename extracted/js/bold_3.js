@@ -206,53 +206,7 @@ function BoldHomeMobile() {
         </div>
       </section>
 
-      <footer style={{ padding: "40px 20px", background: "#0A0A0A", color: "#fff" }}>
-        <img src={assetUrl("assets/neo-lockup-white.png")} alt="The GEM Home Team at NEO Home Loans" style={{ height: 24, width: "auto", marginBottom: 20, display: "block" }} />
-
-        {/* compliance badges */}
-        <div style={{ display: "flex", flexWrap: "wrap", gap: 16, alignItems: "center", padding: "18px 0", borderTop: "1px solid rgba(255,255,255,0.1)", borderBottom: "1px solid rgba(255,255,255,0.1)", marginBottom: 20 }}>
-          <div style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
-            <div style={{ width: 30, height: 30, borderRadius: 4, border: "1.5px solid rgba(255,255,255,0.4)", position: "relative" }}>
-              <div style={{ position: "absolute", inset: 3, display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "1fr 1fr", gap: 1 }}>
-                <div style={{ background: "rgba(255,255,255,0.4)" }}></div><div></div><div></div>
-                <div style={{ background: "rgba(255,255,255,0.4)" }}></div>
-              </div>
-            </div>
-            <div style={{ fontSize: 10, color: "rgba(255,255,255,0.85)", fontWeight: 600, letterSpacing: ".04em", lineHeight: 1.3 }}>EQUAL HOUSING<br />LENDER</div>
-          </div>
-          <div>
-            <div style={{ fontSize: 9, color: "rgba(255,255,255,0.55)", letterSpacing: ".08em", fontWeight: 600 }}>COMPANY NMLS</div>
-            <div style={{ fontSize: 12, color: "#fff", fontWeight: 500, fontVariantNumeric: "tabular-nums" }}>#330511 · Better Mortgage</div>
-          </div>
-          <div>
-            <div style={{ fontSize: 9, color: "rgba(255,255,255,0.55)", letterSpacing: ".08em", fontWeight: 600 }}>INDIVIDUAL NMLS</div>
-            <div style={{ fontSize: 12, color: "#fff", fontWeight: 500, fontVariantNumeric: "tabular-nums" }}>#972639 · Megan Sawamura</div>
-          </div>
-        </div>
-
-        {/* Legal disclosures */}
-        <div style={{ fontSize: 10.5, color: "rgba(255,255,255,0.45)", lineHeight: 1.6, marginBottom: 20 }}>
-          <p style={{ marginBottom: 8 }}>
-            This website is for informational and educational purposes only and is not an offer, rate quote, pre-qualification, pre-approval, or commitment to lend. All loans are subject to credit approval, income and asset verification, property appraisal, and underwriting; rates, terms, and programs are subject to change without notice and are not guaranteed. Production volume, transaction counts, client ratings, and any rankings or awards (including "Top 1% of U.S. Loan Officers") reflect historical results from internal records or third-party sources and are not a guarantee of future results. Calculator outputs and any payment, savings, or dashboard figures shown are hypothetical illustrations for example purposes only and do not reflect an actual loan offer.
-          </p>
-          <p style={{ marginBottom: 8 }}>
-            © 2026 Better Home &amp; Finance Holding Company and/or its affiliates. Better is a family of companies. Better Mortgage Corporation provides home loans; Better Real Estate, LLC and Better Real Estate California Inc License #02164055 provides real estate services; Better Cover, LLC sells insurance products; and Better Settlement Services provides title insurance services; and Better Inspect, LLC provides home inspection services. All rights reserved.
-          </p>
-          <p style={{ marginBottom: 8 }}>
-            Home lending products offered by Better Mortgage Corporation. Better Mortgage Corporation is a direct lender. NMLS #330511. 1 World Trade Center, 80th Floor, New York, NY 10007. Loans made or arranged pursuant to a California Finance Lenders Law License. Not available in all states. Equal Housing Lender. <a href="http://www.nmlsconsumeraccess.org/EntityDetails.aspx/COMPANY/330511" style={{ color: "rgba(255,255,255,0.7)", textDecoration: "underline" }}>NMLS Consumer Access</a>.
-          </p>
-          <p style={{ marginBottom: 8 }}>
-            Better Mortgage Corporation, Better Real Estate, LLC, Better Settlement Services, LLC, Better Cover, LLC, Better Connect, and Better Inspect, LLC are separate operating subsidiaries of Better Home &amp; Finance Holding Company. Each company is a separate legal entity. Products not available in all states.
-          </p>
-          <p>
-            Licensed by the Department of Financial Protection and Innovation under the California Residential Mortgage Lending Act. CA-DRE #02164055.
-          </p>
-        </div>
-
-        <div style={{ fontSize: 11, color: "rgba(255,255,255,.55)", letterSpacing: ".02em", borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: 16 }}>
-          © 2026 The GEM Home Team at NEO Home Loans · All rights reserved
-        </div>
-      </footer>
+      <MobFooter />
     </div>
   );
 }
