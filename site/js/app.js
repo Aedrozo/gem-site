@@ -1532,7 +1532,7 @@ function BoldHome() {
       boxShadow: "0 6px 20px -6px rgba(10,10,10,.4)"
     }
   }, "Get Pre-Approved \u2192"), /*#__PURE__*/React.createElement("a", {
-    href: "https://youtube.com/channel/UCR_MAH3M-_tpM8SzdtaluCg",
+    href: "https://gemteam.youcanbook.me",
     target: "_blank",
     rel: "noopener",
     style: {
@@ -1547,20 +1547,7 @@ function BoldHome() {
       border: "1px solid var(--line-2)",
       borderRadius: 10
     }
-  }, /*#__PURE__*/React.createElement("span", {
-    style: {
-      display: "inline-flex",
-      alignItems: "center",
-      justifyContent: "center",
-      width: 24,
-      height: 24,
-      borderRadius: 12,
-      background: "var(--gold)",
-      color: "var(--ink-on-cyan)",
-      fontSize: 9,
-      paddingLeft: 2
-    }
-  }, "\u25B6"), "Watch in 90 seconds")), /*#__PURE__*/React.createElement("div", {
+  }, "Schedule A Consultation \u2192")), /*#__PURE__*/React.createElement("div", {
     style: {
       fontSize: 13,
       color: "var(--ink-soft)",
@@ -1595,7 +1582,7 @@ function BoldHome() {
       objectPosition: "center"
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/hero.mp4?v=1785300012142",
+    src: "/assets/hero.mp4?v=1785300722049",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -1671,7 +1658,7 @@ function BoldHome() {
       opacity: 0.55
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/bento.mp4?v=1785300012142",
+    src: "/assets/bento.mp4?v=1785300722049",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -4447,7 +4434,7 @@ function StoryVideoSection() {
       opacity: 0.5
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/bento.mp4?v=1785300012142",
+    src: "/assets/bento.mp4?v=1785300722049",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {

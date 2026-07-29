@@ -286,18 +286,13 @@ function BoldHome() {
                   background: "var(--ink)", color: "#fff", borderRadius: 10,
                   boxShadow: "0 6px 20px -6px rgba(10,10,10,.4)"
                 }}>Get Pre-Approved →</a>
-                <a href="https://youtube.com/channel/UCR_MAH3M-_tpM8SzdtaluCg" target="_blank" rel="noopener" style={{
+                <a href="https://gemteam.youcanbook.me" target="_blank" rel="noopener" style={{
                   display: "inline-flex", alignItems: "center", gap: 10,
                   padding: "14px 22px", fontSize: 15, fontWeight: 600,
                   background: "var(--bg)", color: "var(--ink)",
                   border: "1px solid var(--line-2)", borderRadius: 10
                 }}>
-                  <span style={{
-                    display: "inline-flex", alignItems: "center", justifyContent: "center",
-                    width: 24, height: 24, borderRadius: 12,
-                    background: "var(--gold)", color: "var(--ink-on-cyan)", fontSize: 9, paddingLeft: 2
-                  }}>▶</span>
-                  Watch in 90 seconds
+                  Schedule A Consultation →
                 </a>
               </div>
               <div style={{ fontSize: 13, color: "var(--ink-soft)", lineHeight: 1.5, maxWidth: 560 }}>
