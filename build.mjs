@@ -138,7 +138,7 @@ const jsonLd = {
   founder: { "@type": "Person", name: "Megan Sawamura", jobTitle: "Loan Officer", identifier: "NMLS #972639" },
   parentOrganization: { "@type": "Organization", name: "Better Mortgage Corporation", identifier: "NMLS #330511" },
   sameAs: [
-    "https://instagram.com/meg.sawa/",
+    "https://www.instagram.com/gemhometeam/",
     "https://facebook.com/GEMTeamMortgage/",
     "https://www.linkedin.com/in/megansawamura",
     "https://youtube.com/channel/UCR_MAH3M-_tpM8SzdtaluCg",

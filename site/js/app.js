@@ -1039,7 +1039,7 @@ function BoldFooter() {
       gap: 10,
       marginTop: 24
     }
-  }, [["instagram", "https://instagram.com/meg.sawa/", /*#__PURE__*/React.createElement("svg", {
+  }, [["instagram", "https://www.instagram.com/gemhometeam/", /*#__PURE__*/React.createElement("svg", {
     key: "ig",
     width: "16",
     height: "16",
@@ -1580,7 +1580,7 @@ function BoldHome() {
       objectPosition: "center"
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/hero.mp4?v=1785301161614",
+    src: "/assets/hero.mp4?v=1785301561343",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -1656,7 +1656,7 @@ function BoldHome() {
       opacity: 0.55
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/bento.mp4?v=1785301161614",
+    src: "/assets/bento.mp4?v=1785301561343",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -4432,7 +4432,7 @@ function StoryVideoSection() {
       opacity: 0.5
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/bento.mp4?v=1785301161614",
+    src: "/assets/bento.mp4?v=1785301561343",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {

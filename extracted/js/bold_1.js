@@ -90,7 +90,7 @@ function BoldFooter() {
             <div style={{ fontSize: 12, color: "rgba(255,255,255,.55)", marginBottom: 16 }}>Powered by Better</div>
             <div style={{ display: "flex", gap: 10, marginTop: 24 }}>
               {[
-                ["instagram", "https://instagram.com/meg.sawa/",
+                ["instagram", "https://www.instagram.com/gemhometeam/",
                   <svg key="ig" width="16" height="16" viewBox="0 0 24 24" fill="none">
                     <rect x="2.5" y="2.5" width="19" height="19" rx="5" stroke="currentColor" strokeWidth="1.8"/>
                     <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.8"/>
