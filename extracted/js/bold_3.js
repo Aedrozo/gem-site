@@ -957,9 +957,19 @@ function BoldContact() {
                   <div style={{ fontSize: 13, color: "var(--ink-soft)", marginTop: 4 }}>{sub}</div>
                 </div>
               ))}
-              <div style={{ marginTop: 40, borderRadius: 12, overflow: "hidden", border: "1px solid var(--line)", color: "var(--ink-mute)" }}>
-                <MapIllo width={520} height={260} accent="var(--gold)" />
+              <div style={{ marginTop: 40, borderRadius: 12, overflow: "hidden", border: "1px solid var(--line)" }}>
+                <iframe
+                  src="https://maps.google.com/maps?q=10089+Willow+Creek+Rd+Suite+200,+San+Diego,+CA+92131&z=15&output=embed"
+                  title="Map to The GEM Home Team office — 10089 Willow Creek Rd, Suite 200, San Diego"
+                  width="100%" height="280" loading="lazy" allowFullScreen
+                  referrerPolicy="no-referrer-when-downgrade"
+                  style={{ border: 0, display: "block" }} />
               </div>
+              <a href="https://www.google.com/maps/search/?api=1&query=10089+Willow+Creek+Rd+Suite+200,+San+Diego,+CA+92131"
+                target="_blank" rel="noopener"
+                style={{ display: "inline-block", marginTop: 12, fontSize: 13.5, fontWeight: 600, color: "var(--gold-deep)" }}>
+                Get directions →
+              </a>
             </div>
 
             <div className="b-card" style={{ padding: 40 }} id="contact-form-d">

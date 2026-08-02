@@ -1812,7 +1812,7 @@ function BoldHome() {
       objectPosition: "center"
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/hero.mp4?v=1785304672029",
+    src: "/assets/hero.mp4?v=1785637268321",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -1888,7 +1888,7 @@ function BoldHome() {
       opacity: 0.55
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/bento.mp4?v=1785304672029",
+    src: "/assets/bento.mp4?v=1785637268321",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -4582,7 +4582,7 @@ function StoryVideoSection() {
       opacity: 0.5
     }
   }, /*#__PURE__*/React.createElement("source", {
-    src: "/assets/bento.mp4?v=1785304672029",
+    src: "/assets/bento.mp4?v=1785637268321",
     type: "video/mp4"
   })), /*#__PURE__*/React.createElement("div", {
     style: {
@@ -7224,14 +7224,32 @@ function BoldContact() {
       marginTop: 40,
       borderRadius: 12,
       overflow: "hidden",
-      border: "1px solid var(--line)",
-      color: "var(--ink-mute)"
+      border: "1px solid var(--line)"
     }
-  }, /*#__PURE__*/React.createElement(MapIllo, {
-    width: 520,
-    height: 260,
-    accent: "var(--gold)"
-  }))), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("iframe", {
+    src: "https://maps.google.com/maps?q=10089+Willow+Creek+Rd+Suite+200,+San+Diego,+CA+92131&z=15&output=embed",
+    title: "Map to The GEM Home Team office \u2014 10089 Willow Creek Rd, Suite 200, San Diego",
+    width: "100%",
+    height: "280",
+    loading: "lazy",
+    allowFullScreen: true,
+    referrerPolicy: "no-referrer-when-downgrade",
+    style: {
+      border: 0,
+      display: "block"
+    }
+  })), /*#__PURE__*/React.createElement("a", {
+    href: "https://www.google.com/maps/search/?api=1&query=10089+Willow+Creek+Rd+Suite+200,+San+Diego,+CA+92131",
+    target: "_blank",
+    rel: "noopener",
+    style: {
+      display: "inline-block",
+      marginTop: 12,
+      fontSize: 13.5,
+      fontWeight: 600,
+      color: "var(--gold-deep)"
+    }
+  }, "Get directions \u2192")), /*#__PURE__*/React.createElement("div", {
     className: "b-card",
     style: {
       padding: 40
@@ -10361,14 +10379,32 @@ function BoldContactMobile() {
       marginTop: 24,
       borderRadius: 14,
       overflow: "hidden",
-      border: "1px solid var(--line)",
-      color: "var(--ink-mute)"
+      border: "1px solid var(--line)"
     }
-  }, /*#__PURE__*/React.createElement(MapIllo, {
-    width: 350,
-    height: 200,
-    accent: "var(--gold)"
-  }))), /*#__PURE__*/React.createElement("section", {
+  }, /*#__PURE__*/React.createElement("iframe", {
+    src: "https://maps.google.com/maps?q=10089+Willow+Creek+Rd+Suite+200,+San+Diego,+CA+92131&z=15&output=embed",
+    title: "Map to The GEM Home Team office \u2014 10089 Willow Creek Rd, Suite 200, San Diego",
+    width: "100%",
+    height: "220",
+    loading: "lazy",
+    allowFullScreen: true,
+    referrerPolicy: "no-referrer-when-downgrade",
+    style: {
+      border: 0,
+      display: "block"
+    }
+  })), /*#__PURE__*/React.createElement("a", {
+    href: "https://www.google.com/maps/search/?api=1&query=10089+Willow+Creek+Rd+Suite+200,+San+Diego,+CA+92131",
+    target: "_blank",
+    rel: "noopener",
+    style: {
+      display: "inline-block",
+      marginTop: 12,
+      fontSize: 13.5,
+      fontWeight: 600,
+      color: "var(--gold-deep)"
+    }
+  }, "Get directions \u2192")), /*#__PURE__*/React.createElement("section", {
     style: {
       padding: "40px 20px 56px"
     }
